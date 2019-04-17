@@ -29,6 +29,7 @@
         "drupal/ds": "^3.3",
         "drupal/geolocation": "^1.11",
         "drupal/kint": "^2.0",
+        "drupal/linkit": "^4.3",
         "drupal/module_filter": "^3.1",
         "drupal/paragraphs": "^1.8",
         "drupal/pathauto": "^1.4",
