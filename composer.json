@@ -25,6 +25,7 @@
         "drupal/backup_migrate": "^4.0",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
+        "drupal/creative_responsive_theme": "^1.2",
         "drupal/devel": "^2.0",
         "drupal/ds": "^3.3",
         "drupal/geolocation": "^1.11",
