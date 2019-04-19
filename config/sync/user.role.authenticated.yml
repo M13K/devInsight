@@ -13,6 +13,8 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'grant content access'
+  - 'grant own content access'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

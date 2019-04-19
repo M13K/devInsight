@@ -1,0 +1,32 @@
+uuid: 4e0221ed-1e1a-4209-a12c-058d6631ce95
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.liste_des_hotel
+  module:
+    - user
+    - views
+  theme:
+    - creativDevInsight
+id: views_block__liste_des_hotel_block_1_2
+theme: creativDevInsight
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:liste_des_hotel-block_1'
+settings:
+  id: 'views_block:liste_des_hotel-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
