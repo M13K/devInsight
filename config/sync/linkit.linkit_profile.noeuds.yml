@@ -1,0 +1,23 @@
+uuid: 1bdbda6e-437d-4f96-9508-bb4c9b698004
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: noeuds
+label: Noeuds
+description: ''
+attributes: {  }
+matchers:
+  afdcd5f7-38c8-4738-add8-f47ead670911:
+    uuid: afdcd5f7-38c8-4738-add8-f47ead670911
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        hotel: hotel
+        page: page
+        programmes_de_recherche: programmes_de_recherche
+      group_by_bundle: false
+      include_unpublished: false

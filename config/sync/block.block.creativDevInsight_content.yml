@@ -1,0 +1,22 @@
+uuid: e1c82d37-ea70-4a8a-a189-3a2a7fe1f962
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: BI2cnDdYGrlfwpU3S3VvGKjD5M1Ep2AHKflxRnfr4t4
+id: creativDevInsight_content
+theme: creativDevInsight
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

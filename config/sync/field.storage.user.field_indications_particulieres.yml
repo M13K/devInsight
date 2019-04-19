@@ -1,0 +1,19 @@
+uuid: a8f3ba28-30fd-46a1-84a7-065fcfb75a8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_indications_particulieres
+field_name: field_indications_particulieres
+entity_type: user
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

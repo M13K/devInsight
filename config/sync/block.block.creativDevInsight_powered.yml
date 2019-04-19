@@ -1,0 +1,22 @@
+uuid: bbd222b4-9066-435d-aec0-d13cd224e17e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: CxKXx-KldYbVOq0_wFRoXoHhpiIiDfyfAk_PVHXC9pQ
+id: creativDevInsight_powered
+theme: creativDevInsight
+region: auto_hidden_block
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

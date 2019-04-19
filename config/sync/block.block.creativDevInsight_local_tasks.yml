@@ -1,0 +1,22 @@
+uuid: ca311a1c-37b3-42ef-885d-5a08cd5d6b2a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: lJWg79fgl3LtPLHkDq4lXTaLnli-H8OpndWPkVZtb5g
+id: creativDevInsight_local_tasks
+theme: creativDevInsight
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

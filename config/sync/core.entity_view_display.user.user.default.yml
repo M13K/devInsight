@@ -1,0 +1,88 @@
+uuid: ea40c018-f35d-42c4-b1f7-1359c86f723d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_indications_particulieres
+    - field.field.user.user.field_nom
+    - field.field.user.user.field_organisation_societe
+    - field.field.user.user.field_pays
+    - field.field.user.user.field_prenom
+    - field.field.user.user.field_site_personnel
+    - field.field.user.user.field_ville
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_indications_particulieres:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_nom:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_organisation_societe:
+    weight: 15
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pays:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_prenom:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_site_personnel:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ville:
+    weight: 14
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  member_for:
+    weight: 5
+    region: content
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  langcode: true

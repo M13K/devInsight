@@ -1,0 +1,81 @@
+uuid: fb4b8334-60ec-4212-bfd4-bdd32596baa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hotel.field_adresse
+    - field.field.node.hotel.field_description
+    - field.field.node.hotel.field_email
+    - field.field.node.hotel.field_photos
+    - field.field.node.hotel.field_prix_de_la_nuit
+    - field.field.node.hotel.field_telephone
+    - node.type.hotel
+  module:
+    - image
+    - text
+    - user
+id: node.hotel.default
+targetEntityType: node
+bundle: hotel
+mode: default
+content:
+  addtoany:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_adresse:
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_email:
+    weight: 5
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_photos:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_prix_de_la_nuit:
+    weight: 6
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_telephone:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

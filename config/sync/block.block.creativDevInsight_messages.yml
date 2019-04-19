@@ -1,0 +1,22 @@
+uuid: 25cf0742-1f14-4b6f-8cff-4c1f7008d656
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: uWy58nYjWIMwjBpWG3bpQw4-czZknk6co5KbdGN8dxA
+id: creativDevInsight_messages
+theme: creativDevInsight
+region: highlighted
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

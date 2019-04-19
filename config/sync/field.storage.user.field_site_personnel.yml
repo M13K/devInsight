@@ -1,0 +1,20 @@
+uuid: af97454f-ec39-41a8-92e0-6f668e6da277
+langcode: en
+status: true
+dependencies:
+  module:
+    - text
+    - user
+id: user.field_site_personnel
+field_name: field_site_personnel
+entity_type: user
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: c10bbe73-e2d0-44e0-803c-59d3dce69a09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prix_de_la_nuit
+    - node.type.hotel
+id: node.hotel.field_prix_de_la_nuit
+field_name: field_prix_de_la_nuit
+entity_type: node
+bundle: hotel
+label: 'Prix de la nuit'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: €
+  suffix: ''
+field_type: float

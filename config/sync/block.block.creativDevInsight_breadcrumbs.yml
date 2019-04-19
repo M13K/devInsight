@@ -1,0 +1,22 @@
+uuid: 47bdce20-5d99-458a-a6bd-3061baaddd59
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: 4HEhetpv2ix0xFfAqD-jL6ggEsaW2skSV98mALGd0n0
+id: creativDevInsight_breadcrumbs
+theme: creativDevInsight
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

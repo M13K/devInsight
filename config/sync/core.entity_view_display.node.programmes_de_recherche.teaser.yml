@@ -1,0 +1,22 @@
+uuid: 272bf0cd-31d0-4b35-8917-0343a27410b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.programmes_de_recherche
+  module:
+    - user
+id: node.programmes_de_recherche.teaser
+targetEntityType: node
+bundle: programmes_de_recherche
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

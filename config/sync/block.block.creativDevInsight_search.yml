@@ -1,0 +1,22 @@
+uuid: 77ce1a06-bfc6-4661-aae3-86bbf649fcd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: 6VPZeNjJiEy4dV2KvMyCGQ6xB9Ixez_OLqv415VAvmI
+id: creativDevInsight_search
+theme: creativDevInsight
+region: footer_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

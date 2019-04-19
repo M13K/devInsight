@@ -1,0 +1,21 @@
+uuid: 9158d8b8-5ad3-4fba-9e93-e978f9980a33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisateurs_du_programme
+    - node.type.programmes_de_recherche
+  module:
+    - text
+id: node.programmes_de_recherche.field_organisateurs_du_programme
+field_name: field_organisateurs_du_programme
+entity_type: node
+bundle: programmes_de_recherche
+label: 'Organisateurs du programme'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

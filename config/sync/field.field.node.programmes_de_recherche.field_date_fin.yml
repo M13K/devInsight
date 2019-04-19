@@ -1,0 +1,21 @@
+uuid: 5f4d5321-8e3b-466a-b8d7-983fe4e265a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_fin
+    - node.type.programmes_de_recherche
+  module:
+    - datetime
+id: node.programmes_de_recherche.field_date_fin
+field_name: field_date_fin
+entity_type: node
+bundle: programmes_de_recherche
+label: 'Date de fin'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

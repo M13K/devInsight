@@ -1,0 +1,21 @@
+uuid: 522b1c29-27f9-4f00-82a6-e7ca66b6e6a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse
+    - node.type.hotel
+  module:
+    - text
+id: node.hotel.field_adresse
+field_name: field_adresse
+entity_type: node
+bundle: hotel
+label: Adresse
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

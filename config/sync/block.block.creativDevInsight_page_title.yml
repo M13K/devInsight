@@ -1,0 +1,20 @@
+uuid: e9885467-cd89-4926-bf39-19fefb4e09a4
+langcode: en
+status: false
+dependencies:
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: _zLaasd8lWP6MChTbVkSrx_t2rGh5IMwXBtbR9u9MF8
+id: creativDevInsight_page_title
+theme: creativDevInsight
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

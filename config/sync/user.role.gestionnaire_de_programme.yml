@@ -1,0 +1,11 @@
+uuid: 66fbc31a-002b-4926-bdf5-2a6328d6d48a
+langcode: en
+status: true
+dependencies: {  }
+id: gestionnaire_de_programme
+label: 'Gestionnaire de programmes'
+weight: -7
+is_admin: null
+permissions:
+  - 'use validation_conferences transition create_new_draft'
+  - 'use validation_conferences transition publish'

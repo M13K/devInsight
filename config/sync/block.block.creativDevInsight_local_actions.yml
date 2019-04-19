@@ -1,0 +1,20 @@
+uuid: cce05e27-2aca-4024-95e9-5943cc6eb967
+langcode: en
+status: true
+dependencies:
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: Vc_iBh-amT5wdaz_t8r-YQsiQzezZRw0ZEJB_036W6k
+id: creativDevInsight_local_actions
+theme: creativDevInsight
+region: auto_hidden_block
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 315a94c0-003e-4478-b8f7-9fe8283c109d
+name: devInsight
+mail: malikalmo@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

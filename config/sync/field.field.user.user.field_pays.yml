@@ -1,0 +1,21 @@
+uuid: 28d5a975-a8d9-4d9d-b528-cb8ead671f55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_pays
+  module:
+    - text
+    - user
+id: user.user.field_pays
+field_name: field_pays
+entity_type: user
+bundle: user
+label: Pays
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,26 @@
+uuid: 58810e4e-9a74-4fe6-ac17-b9a998c44a83
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - creativDevInsight
+_core:
+  default_config_hash: sAaHyx13V5tpanuFeR__cxE9RvypNbu1-ffpGZDWntU
+id: creativDevInsight_main_menu
+theme: creativDevInsight
+region: primary_menu
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }
