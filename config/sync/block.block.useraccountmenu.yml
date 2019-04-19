@@ -1,0 +1,24 @@
+uuid: bc386ffa-81be-42d9-b61e-e4b9883a25a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - creativDevInsight
+id: useraccountmenu
+theme: creativDevInsight
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
