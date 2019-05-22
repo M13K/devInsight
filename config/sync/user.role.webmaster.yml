@@ -1,0 +1,14 @@
+uuid: f53768c7-d158-4974-91e5-75d8986fd802
+langcode: en
+status: true
+dependencies: {  }
+id: webmaster
+label: webmaster
+weight: -6
+is_admin: null
+permissions:
+  - 'delete any programmes_de_recherche content'
+  - 'delete programmes_de_recherche revisions'
+  - 'edit any programmes_de_recherche content'
+  - 'revert programmes_de_recherche revisions'
+  - 'view programmes_de_recherche revisions'

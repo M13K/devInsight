@@ -1,0 +1,7 @@
+role_to_select:
+  participant: participant
+  gestionnaire_de_programme: 0
+  administrator: 0
+registration_mode: user
+_core:
+  default_config_hash: o1wWkhSOJotsHFgvzESaUOiTWhLak62cKBDyEtewAIM

@@ -12,7 +12,7 @@ id: formumaire_d_adhesion_aux_confer
 title: 'Formumaire d''adhésion aux conférences'
 description: ''
 category: ''
-elements: null
+elements: "selectionnez_conferences:\n  '#type': webform_entity_checkboxes\n  '#title': 'Sélectionnez conférences'\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      programmes_de_recherche: programmes_de_recherche\ninteret_du_participant_au_programme:\n  '#type': textarea\n  '#title': 'Intérêt du participant au programme'"
 css: ''
 javascript: ''
 settings:

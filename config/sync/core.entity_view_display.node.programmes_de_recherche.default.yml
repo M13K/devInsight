@@ -19,9 +19,14 @@ targetEntityType: node
 bundle: programmes_de_recherche
 mode: default
 content:
+  content_moderation_control:
+    weight: -20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_budget:
     weight: 105
-    label: above
+    label: inline
     settings:
       thousand_separator: ''
       decimal_separator: .
@@ -32,7 +37,7 @@ content:
     region: content
   field_date_debut:
     weight: 103
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -41,7 +46,7 @@ content:
     region: content
   field_date_fin:
     weight: 104
-    label: above
+    label: inline
     settings:
       format_type: medium
       timezone_override: ''
@@ -57,7 +62,7 @@ content:
     region: content
   field_organisateurs_du_programme:
     weight: 106
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: text_default
