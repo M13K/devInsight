@@ -1,4 +1,4 @@
-uuid: 3026d072-9f26-4b43-8b29-a0385c74fb63
+uuid: efa87c6f-5875-47dc-83ee-909d2bd5662e
 langcode: en
 status: true
 dependencies:
@@ -6,14 +6,15 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.programmes_de_recherche
     - system.menu.main
-    - user.role.participant
+    - user.role.gestionnaire_de_programme
+    - user.role.webmaster
   module:
     - node
     - user
-id: programmes
-label: Programmes
+id: pagegestionnaire_
+label: 'pageGestionnaire '
 module: views
-description: 'La liste de tous les programmes'
+description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -29,7 +30,8 @@ display:
         type: role
         options:
           role:
-            participant: participant
+            gestionnaire_de_programme: gestionnaire_de_programme
+            webmaster: webmaster
       cache:
         type: tag
         options: {  }
@@ -160,7 +162,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Programmes
+      title: 'pageGestionnaire '
       header: {  }
       footer: {  }
       empty: {  }
@@ -183,11 +185,17 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: programmes
+      path: pagegestionnaire-
       menu:
         type: normal
-        title: Programmes
+        title: 'Mes programmes'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
         menu_name: main
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:

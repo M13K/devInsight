@@ -1,5 +1,6 @@
 roles:
   participant: unsafe
   gestionnaire_de_programme: unsafe
+  webmaster: unsafe
 _core:
   default_config_hash: UiTY9bhUKWJOIWDlOKM3akeeyHuJJRspXETsv3SY6jw

@@ -1,4 +1,4 @@
-uuid: b7adccd9-3ca0-4e30-bcd3-1123bc56c3da
+uuid: 01e6c5bb-a78c-4a6f-9234-72c9674182fe
 langcode: en
 status: open
 dependencies: {  }
@@ -8,11 +8,11 @@ weight: 0
 uid: 1
 template: false
 archive: false
-id: formumaire_d_adhesion_aux_confer
-title: 'Formumaire d''adhésion aux conférences'
+id: creation_de_programme
+title: 'Création de programme'
 description: ''
 category: ''
-elements: "selectionnez_conferences:\n  '#type': webform_entity_checkboxes\n  '#title': 'Sélectionnez conférences'\n  '#target_type': node\n  '#selection_handler': 'default:node'\n  '#selection_settings':\n    target_bundles:\n      programmes_de_recherche: programmes_de_recherche\ninteret_du_participant_au_programme:\n  '#type': textarea\n  '#title': 'Intérêt du participant au programme'"
+elements: "titre_de_la_conference:\n  '#type': textfield\n  '#title': 'Titre de la conférence'\n  '#required': true\ndate_de_debut:\n  '#type': date\n  '#title': 'Date de début'\n  '#required': true\ndate_de_fin:\n  '#type': date\n  '#title': 'Date de fin'\n  '#required': true\ndescription_et_but_du_programme:\n  '#type': textarea\n  '#title': 'Description et but du programme'\n  '#unique': true\nbudget:\n  '#type': textfield\n  '#title': Budget\n  '#required': true\norganisateurs_du_programme:\n  '#type': textfield\n  '#title': 'Organisateurs du programme'\n  '#required': true"
 css: ''
 javascript: ''
 settings:
@@ -122,8 +122,8 @@ settings:
 access:
   create:
     roles:
-      - anonymous
-      - authenticated
+      - gestionnaire_de_programme
+      - webmaster
     users: {  }
     permissions: {  }
   view_any:
