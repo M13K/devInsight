@@ -9,4 +9,8 @@ _core:
   default_config_hash: 7LkiviGITIpniIOOIzpuxR7r4XzqqYN_cwu0fb0kx1M
 content_access_node_type:
   hotel: 'a:3:{s:8:"view_own";a:1:{i:0;s:13:"authenticated";}s:4:"view";a:1:{i:0;s:13:"authenticated";}s:8:"per_node";i:1;}'
+
   programmes_de_recherche: 'a:2:{s:8:"view_own";a:3:{i:0;s:13:"authenticated";i:1;s:11:"participant";i:2;s:25:"gestionnaire_de_programme";}s:4:"view";a:3:{i:0;s:13:"authenticated";i:1;s:11:"participant";i:2;s:25:"gestionnaire_de_programme";}}'
+
+  programmes_de_recherche: 'a:2:{s:8:"view_own";a:2:{i:0;s:13:"authenticated";i:1;s:11:"participant";}s:4:"view";a:2:{i:0;s:13:"authenticated";i:1;s:11:"participant";}}'
+
