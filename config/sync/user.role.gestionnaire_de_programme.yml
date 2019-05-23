@@ -7,6 +7,7 @@ label: 'Gestionnaire de programmes'
 weight: -7
 is_admin: null
 permissions:
+  - 'access budget'
   - 'create programmes_de_recherche content'
   - 'delete own programmes_de_recherche content'
   - 'delete programmes_de_recherche revisions'

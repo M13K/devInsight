@@ -1,0 +1,5 @@
+dev.budget:
+  title: Budgetisator
+  route_name: dev.budget
+  base_route: entity.user.canonical
+  weight: 2
