@@ -1,0 +1,14 @@
+{
+  "name": "drupal/dev",
+  "type": "drupal-module",
+  "description": "first module to customize site",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/dev",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/dev",
+    "source": "http://cgit.drupalcode.org/dev"
+  },
+  "require": { }
+}

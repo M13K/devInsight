@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains dev.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dev_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dev module.
+    case 'help.page.dev':
+        return '<p>' . t('first module to customize site') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function dev_theme() {
+  return [
+    'dev' => [
+      'render element' => 'children',
+    ],
+  ];
+}
+
+function dev_user_login(UserInterface $account){
+    \Drupal::messenger()->addMessage(t('Bienvenue %name',
+        ['%name' => $account->getAccountName()]));
+}

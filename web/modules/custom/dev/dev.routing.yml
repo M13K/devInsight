@@ -1,0 +1,7 @@
+dev.budget:
+  path: 'user/{user}/budget'
+  defaults:
+    _title: 'Budgetisator'
+    _form: '\Drupal\dev\Form\BudgetForm'
+  requirements:
+    _permission: 'access budget'
