@@ -31,7 +31,6 @@
         "drupal/creative_responsive_theme": "^1.2",
         "drupal/devel": "^2.0",
         "drupal/ds": "^3.3",
-        "drupal/fullcalendar": "^1.0@alpha",
         "drupal/geolocation": "^1.11",
         "drupal/kint": "^2.0",
         "drupal/linkit": "^4.3",
