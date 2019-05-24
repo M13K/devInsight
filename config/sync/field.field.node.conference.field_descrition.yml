@@ -1,0 +1,24 @@
+uuid: cb29a8bb-9951-4c7b-a4df-d90bd95b0275
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descrition
+    - node.type.conference
+  module:
+    - text
+id: node.conference.field_descrition
+field_name: field_descrition
+entity_type: node
+bundle: conference
+label: Descrition
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: "<p>Saisissez la description</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

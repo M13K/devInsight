@@ -1,0 +1,21 @@
+uuid: d790b390-e9c2-403f-a0b0-781fce15330a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu
+    - node.type.conference
+  module:
+    - geolocation
+id: node.conference.field_lieu
+field_name: field_lieu
+entity_type: node
+bundle: conference
+label: Lieu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

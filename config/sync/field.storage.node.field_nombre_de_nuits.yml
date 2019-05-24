@@ -1,0 +1,20 @@
+uuid: 4c0586d6-55c9-4d28-979a-9de15ecaca52
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_nombre_de_nuits
+field_name: field_nombre_de_nuits
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
