@@ -1,0 +1,6 @@
+name: 'Dev'
+type: module
+description: 'first module to customize site'
+core: 8.x
+package: 'Custom'
+configure: dev.config
