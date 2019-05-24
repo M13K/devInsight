@@ -8,6 +8,7 @@ weight: -6
 is_admin: null
 permissions:
   - 'delete any programmes_de_recherche content'
+  - 'delete own conference content'
   - 'delete programmes_de_recherche revisions'
   - 'edit any programmes_de_recherche content'
   - 'revert programmes_de_recherche revisions'
