@@ -1,0 +1,4 @@
+access budget:
+  title: 'Access Budget'
+  description: 'Deny other users to access budget'
+  restrict access: 'true'
