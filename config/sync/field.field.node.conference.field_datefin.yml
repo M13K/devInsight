@@ -1,0 +1,21 @@
+uuid: cbbbde0d-50ff-4adf-a0c1-9df78c113394
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datefin
+    - node.type.conference
+  module:
+    - datetime
+id: node.conference.field_datefin
+field_name: field_datefin
+entity_type: node
+bundle: conference
+label: DateFin
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

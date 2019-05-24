@@ -9,8 +9,10 @@ is_admin: null
 permissions:
   - 'access budget'
   - 'create programmes_de_recherche content'
+  - 'delete own conference content'
   - 'delete own programmes_de_recherche content'
   - 'delete programmes_de_recherche revisions'
+  - 'edit own conference content'
   - 'edit own programmes_de_recherche content'
   - 'use validation_conferences transition create_new_draft'
   - 'use validation_conferences transition publish'
