@@ -10,6 +10,4 @@ _core:
 content_access_node_type:
   hotel: 'a:3:{s:8:"view_own";a:1:{i:0;s:13:"authenticated";}s:4:"view";a:1:{i:0;s:13:"authenticated";}s:8:"per_node";i:1;}'
   programmes_de_recherche: 'a:2:{s:8:"view_own";a:3:{i:0;s:13:"authenticated";i:1;s:11:"participant";i:2;s:25:"gestionnaire_de_programme";}s:4:"view";a:3:{i:0;s:13:"authenticated";i:1;s:11:"participant";i:2;s:25:"gestionnaire_de_programme";}}'
-
   conference: 'a:3:{s:8:"per_node";i:1;s:8:"view_own";a:0:{}s:4:"view";a:4:{i:0;s:11:"participant";i:1;s:25:"gestionnaire_de_programme";i:2;s:9:"webmaster";i:3;s:13:"administrator";}}'
-
