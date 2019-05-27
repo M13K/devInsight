@@ -1,0 +1,31 @@
+uuid: 6aa0aed1-7caa-41cd-bed1-4fd3fd62ddf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.formumaire_d_adhesion_aux_confer
+  module:
+    - system
+    - webform
+  theme:
+    - creativDevInsight
+id: webform
+theme: creativDevInsight
+region: sidebar_second
+weight: -7
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Adhésion au programme'
+  provider: webform
+  label_display: visible
+  webform_id: formumaire_d_adhesion_aux_confer
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '/programmes*'
+    negate: false
+    context_mapping: {  }

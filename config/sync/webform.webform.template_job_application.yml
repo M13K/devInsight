@@ -1,25 +1,30 @@
-uuid: b7adccd9-3ca0-4e30-bcd3-1123bc56c3da
+uuid: 85b35fb7-d5c7-4543-bf7c-5ec089bdf92f
 langcode: en
-status: open
-dependencies: {  }
+status: closed
+dependencies:
+  enforced:
+    module:
+      - webform_templates
+_core:
+  default_config_hash: B0keV52pt9c_sG950fxivA1Dkh8Ol_7dM6DHRBE1bVo
 open: null
 close: null
 weight: 0
-uid: 1
-template: false
+uid: null
+template: true
 archive: false
-id: formumaire_d_adhesion_aux_confer
-title: 'Formumaire d''adhésion aux conférences'
-description: ''
+id: template_job_application
+title: 'Job Application'
+description: 'A job application webform template.'
 category: ''
-elements: "conference:\n  '#type': webform_wizard_page\n  '#title': Conférence\n  '#prev_button_label': Précédent\n  '#next_button_label': Suivant\n  j_y_participe:\n    '#type': radios\n    '#title': 'J''y participe'\n    '#options':\n      Oui: Oui\n      Non: Non\n  interet_du_participant_au_programme:\n    '#type': textarea\n    '#title': 'Intérêt du participant au programme'\n    '#states':\n      invisible:\n        ':input[name=\"j_y_participe\"]':\n          value: Non\n  option_de_participation:\n    '#type': radios\n    '#title': 'Option de participation'\n    '#options':\n      oui: oui\n      non: non\n    '#states':\n      invisible:\n        ':input[name=\"j_y_participe\"]':\n          value: Non\n  uploader_votre_programme:\n    '#type': webform_document_file\n    '#title': 'Télécharger votre programme'\n    '#states':\n      visible:\n        ':input[name=\"j_y_participe\"]':\n          value: oui\n        ':input[name=\"option_de_participation\"]':\n          value: oui\nhebergement:\n  '#type': webform_wizard_page\n  '#title': Hébergement\n  '#states':\n    invisible:\n      ':input[name=\"j_y_participe\"]':\n        value: Non\n  '#prev_button_label': Précédent\n  '#next_button_label': Suivant\n  besoin_d_hebergement_:\n    '#type': radios\n    '#title': 'Besoin d''hébergement ?'\n    '#options':\n      Oui: oui\n      Non: non\n  choix_de_l_hotel:\n    '#type': webform_entity_select\n    '#title': 'Choix de l''hôtel'\n    '#states':\n      invisible:\n        ':input[name=\"besoin_d_hebergement_\"]':\n          value: Non\n    '#target_type': node\n    '#selection_handler': 'default:node'\n    '#selection_settings':\n      target_bundles:\n        hotel: hotel\n  date_d_arrivee:\n    '#type': datetime\n    '#title': 'Date d''arrivée'\n    '#states':\n      invisible:\n        ':input[name=\"besoin_d_hebergement_\"]':\n          value: Non\n    '#date_time_step': '60'\n  date_de_depart:\n    '#type': datetime\n    '#title': 'Date de départ'\n    '#states':\n      invisible:\n        ':input[name=\"besoin_d_hebergement_\"]':\n          value: Non\n    '#date_time_step': '60'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Adhérez"
+elements: "information:\n  '#title': 'Your Information'\n  '#type': webform_section\n  first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  gender:\n    '#type': webform_radios_other\n    '#title': Gender\n    '#options': gender\n    '#required': true\ncontact_information:\n  '#title': 'Contact Information'\n  '#type': webform_section\n  contact:\n    '#type': webform_contact\n    '#title': Contact\n    '#title_display': invisible\n    '#name__access': false\n    '#company__access': false\nresume:\n  '#title': 'Your Resume'\n  '#type': webform_section\n  resume_method:\n    '#type': radios\n    '#options':\n      attach: 'Attach resume file'\n      paste: 'Paste your resume'\n    '#prefix': '<div class=\"container-inline\">'\n    '#suffix': '</div>'\n    '#default_value': attach\n  resume_file:\n    '#type': managed_file\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      required:\n        ':input[name=\"resume_method\"]':\n          value: attach\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: attach\n  resume_text:\n    '#type': textarea\n    '#title': Resume\n    '#title_display': invisible\n    '#states':\n      visible:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      required:\n        ':input[name=\"resume_method\"]':\n          value: paste\n      enabled:\n        ':input[name=\"resume_method\"]':\n          value: paste\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
 css: ''
 javascript: ''
 settings:
   ajax: false
   ajax_scroll_top: form
   page: true
-  page_submit_path: /adhesion
+  page_submit_path: ''
   page_confirm_path: ''
   form_title: source_entity_webform
   form_submit_once: false
@@ -79,8 +84,8 @@ settings:
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
-  preview: 2
-  preview_label: Récap
+  preview: 0
+  preview_label: ''
   preview_title: ''
   preview_message: ''
   preview_attributes: {  }
@@ -93,8 +98,8 @@ settings:
   draft_saved_message: ''
   draft_loaded_message: ''
   confirmation_type: page
-  confirmation_title: 'Adhésion réussie'
-  confirmation_message: 'Merci,&nbsp;[webform_submission:values:first_name]'
+  confirmation_title: ''
+  confirmation_message: 'Thank you for applying.'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true
@@ -166,4 +171,38 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email_notification:
+    id: email
+    label: 'Email Notification'
+    handler_id: email_notification
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: _default
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:first_name] [webform_submission:values:last_name]'
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.programmes_de_recherche.field_adhesion_conference
     - field.field.node.programmes_de_recherche.field_budget
     - field.field.node.programmes_de_recherche.field_date_debut
     - field.field.node.programmes_de_recherche.field_date_fin
@@ -14,6 +15,7 @@ dependencies:
     - datetime
     - text
     - user
+    - webform
 id: node.programmes_de_recherche.default
 targetEntityType: node
 bundle: programmes_de_recherche
@@ -24,6 +26,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_adhesion_conference:
+    weight: 107
+    label: above
+    settings:
+      label: 'Go to [webform:title] webform'
+      dialog: ''
+      attributes: {  }
+    third_party_settings: {  }
+    type: webform_entity_reference_link
+    region: content
   field_budget:
     weight: 105
     label: inline
