@@ -1,0 +1,22 @@
+uuid: 924b2da1-38d9-4f86-aaf5-0000345e75ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newcreativdevinsight
+_core:
+  default_config_hash: CxKXx-KldYbVOq0_wFRoXoHhpiIiDfyfAk_PVHXC9pQ
+id: newcreativdevinsight_powered
+theme: newcreativdevinsight
+region: auto_hidden_block
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

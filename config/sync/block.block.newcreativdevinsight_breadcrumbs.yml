@@ -1,0 +1,22 @@
+uuid: fbf0e8a1-d66c-48c5-9d6a-e167df8b8f10
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newcreativdevinsight
+_core:
+  default_config_hash: 4HEhetpv2ix0xFfAqD-jL6ggEsaW2skSV98mALGd0n0
+id: newcreativdevinsight_breadcrumbs
+theme: newcreativdevinsight
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: bab3719c-8d21-412f-802e-86fe484380a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - corporate_blue
+_core:
+  default_config_hash: gFGNWLl6D3cEPJQ-J3jQVgzSd7-dIOqGkrjlNRXVcXA
+id: corporate_blue_footer
+theme: corporate_blue
+region: footer
+weight: -10
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

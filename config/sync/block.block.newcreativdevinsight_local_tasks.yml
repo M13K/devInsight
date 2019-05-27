@@ -1,0 +1,22 @@
+uuid: 0c1cb607-f71a-451f-84a7-de056057e4de
+langcode: en
+status: true
+dependencies:
+  theme:
+    - newcreativdevinsight
+_core:
+  default_config_hash: lJWg79fgl3LtPLHkDq4lXTaLnli-H8OpndWPkVZtb5g
+id: newcreativdevinsight_local_tasks
+theme: newcreativdevinsight
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

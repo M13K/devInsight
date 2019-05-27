@@ -1,0 +1,22 @@
+uuid: 3d51c6fe-494a-43ed-a8f0-8e28b65dbe1f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - corporate_blue
+_core:
+  default_config_hash: 6ICJL0hihbanEO-15_1GkxKd3Y9OnC8bfuuPIixTapI
+id: corporate_blue_powered
+theme: corporate_blue
+region: navigation
+weight: -9
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

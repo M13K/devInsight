@@ -1,0 +1,22 @@
+uuid: 9eb15b7c-4119-42b7-bab7-bfa6f251d72d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newcreativdevinsight
+_core:
+  default_config_hash: uWy58nYjWIMwjBpWG3bpQw4-czZknk6co5KbdGN8dxA
+id: newcreativdevinsight_messages
+theme: newcreativdevinsight
+region: highlighted
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

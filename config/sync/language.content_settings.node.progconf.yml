@@ -1,0 +1,11 @@
+uuid: 2addca1f-3ccf-4768-9ee0-198ffd344bdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.progconf
+id: node.progconf
+target_entity_type_id: node
+target_bundle: progconf
+default_langcode: site_default
+language_alterable: false

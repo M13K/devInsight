@@ -1,0 +1,27 @@
+uuid: 7cf123c2-e0bb-4e2d-bef0-e6e4393116a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pages_publiques.field_contenu
+    - node.type.pages_publiques
+  module:
+    - text
+    - user
+id: node.pages_publiques.teaser
+targetEntityType: node
+bundle: pages_publiques
+mode: teaser
+content:
+  field_contenu:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

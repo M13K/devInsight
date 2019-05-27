@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - node.type.programmes_de_recherche
+    - node.type.progconf
   module:
     - content_moderation
 id: validation_conferences
@@ -61,4 +61,4 @@ type_settings:
       weight: 2
   entity_types:
     node:
-      - programmes_de_recherche
+      - progconf

@@ -1,0 +1,22 @@
+uuid: 12e6f7de-0ec5-40d0-b2ea-3029995acf4e
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - newcreativdevinsight
+_core:
+  default_config_hash: 6VPZeNjJiEy4dV2KvMyCGQ6xB9Ixez_OLqv415VAvmI
+id: newcreativdevinsight_search
+theme: newcreativdevinsight
+region: footer_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

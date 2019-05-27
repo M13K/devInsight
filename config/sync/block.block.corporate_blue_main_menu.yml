@@ -1,0 +1,26 @@
+uuid: d6932469-7fee-4304-97fb-9021bd65e976
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - corporate_blue
+_core:
+  default_config_hash: hitHNqX2pRB-rfFzUS7lX-YQEKNP00bf0evxmRMs6Nw
+id: corporate_blue_main_menu
+theme: corporate_blue
+region: navigation_collapsible
+weight: -10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }
