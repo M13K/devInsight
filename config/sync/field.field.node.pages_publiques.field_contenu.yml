@@ -1,0 +1,21 @@
+uuid: 637c809b-2ba0-4c44-aa62-e6fcb21c97da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenu
+    - node.type.pages_publiques
+  module:
+    - text
+id: node.pages_publiques.field_contenu
+field_name: field_contenu
+entity_type: node
+bundle: pages_publiques
+label: Contenu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

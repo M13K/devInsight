@@ -7,8 +7,18 @@ label: webmaster
 weight: -6
 is_admin: null
 permissions:
+  - 'create pages_publiques content'
+  - 'delete any pages_publiques content'
+  - 'delete any progconf content'
   - 'delete any programmes_de_recherche content'
+  - 'delete own pages_publiques content'
+  - 'delete progconf revisions'
   - 'delete programmes_de_recherche revisions'
+  - 'edit any pages_publiques content'
+  - 'edit any progconf content'
   - 'edit any programmes_de_recherche content'
+  - 'edit own pages_publiques content'
+  - 'revert progconf revisions'
   - 'revert programmes_de_recherche revisions'
+  - 'view progconf revisions'
   - 'view programmes_de_recherche revisions'

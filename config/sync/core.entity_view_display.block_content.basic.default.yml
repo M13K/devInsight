@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.basic
-    - field.field.block_content.basic.body
-  module:
-    - text
+    - field.field.block_content.basic.field_lesconf
 _core:
   default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
 id: block_content.basic.default
@@ -14,12 +12,14 @@ targetEntityType: block_content
 bundle: basic
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 0
-    region: content
-    settings: {  }
+  field_lesconf:
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
     third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
 hidden:
   langcode: true

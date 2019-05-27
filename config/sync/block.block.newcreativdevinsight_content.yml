@@ -1,0 +1,22 @@
+uuid: 897d0381-1510-49a6-ba10-73eea596094e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newcreativdevinsight
+_core:
+  default_config_hash: BI2cnDdYGrlfwpU3S3VvGKjD5M1Ep2AHKflxRnfr4t4
+id: newcreativdevinsight_content
+theme: newcreativdevinsight
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

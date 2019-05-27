@@ -1,0 +1,25 @@
+uuid: e6970f6a-01e0-43e6-9d5b-01494fbceb29
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - corporate_blue
+_core:
+  default_config_hash: 0aUlAMllFJrRwxOaO1LFNJXW6mdtT-07KXliUaqcO9o
+id: sitebranding
+theme: corporate_blue
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

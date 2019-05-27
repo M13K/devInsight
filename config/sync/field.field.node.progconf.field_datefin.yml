@@ -1,0 +1,21 @@
+uuid: f7a90fff-4531-4afa-97af-fc9ef3776f82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datefin
+    - node.type.progconf
+  module:
+    - datetime
+id: node.progconf.field_datefin
+field_name: field_datefin
+entity_type: node
+bundle: progconf
+label: 'Date de fin'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

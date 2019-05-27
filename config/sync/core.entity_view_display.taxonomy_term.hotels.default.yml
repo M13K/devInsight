@@ -1,0 +1,31 @@
+uuid: 92a11d15-6ae3-4868-b0a1-5b3c7dcd965e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.hotels.field_hotel
+    - taxonomy.vocabulary.hotels
+  module:
+    - text
+id: taxonomy_term.hotels.default
+targetEntityType: taxonomy_term
+bundle: hotels
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_hotel:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true

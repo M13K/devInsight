@@ -1,0 +1,11 @@
+uuid: cbb90bce-d290-443f-b724-44e309bccd26
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pages_publiques
+id: node.pages_publiques
+target_entity_type_id: node
+target_bundle: pages_publiques
+default_langcode: site_default
+language_alterable: false
