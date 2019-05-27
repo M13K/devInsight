@@ -1,25 +1,30 @@
-uuid: b7adccd9-3ca0-4e30-bcd3-1123bc56c3da
+uuid: 02654ada-bee1-4787-941f-3e9cf03ce85d
 langcode: en
-status: open
-dependencies: {  }
+status: closed
+dependencies:
+  enforced:
+    module:
+      - webform_templates
+_core:
+  default_config_hash: Xdks5zuADib7ABfku6xUXI3auaLHn3iLgKWJZhtnXvE
 open: null
 close: null
 weight: 0
-uid: 1
-template: false
+uid: null
+template: true
 archive: false
-id: formumaire_d_adhesion_aux_confer
-title: 'Formumaire d''adhésion aux conférences'
-description: ''
+id: template_employee_evaluation
+title: 'Employee Evaluation'
+description: 'An employee evaluation webform template.'
 category: ''
-elements: "conference:\n  '#type': webform_wizard_page\n  '#title': Conférence\n  '#prev_button_label': Précédent\n  '#next_button_label': Suivant\n  j_y_participe:\n    '#type': radios\n    '#title': 'J''y participe'\n    '#options':\n      Oui: Oui\n      Non: Non\n  interet_du_participant_au_programme:\n    '#type': textarea\n    '#title': 'Intérêt du participant au programme'\n    '#states':\n      invisible:\n        ':input[name=\"j_y_participe\"]':\n          value: Non\n  option_de_participation:\n    '#type': radios\n    '#title': 'Option de participation'\n    '#options':\n      oui: oui\n      non: non\n    '#states':\n      invisible:\n        ':input[name=\"j_y_participe\"]':\n          value: Non\n  uploader_votre_programme:\n    '#type': webform_document_file\n    '#title': 'Télécharger votre programme'\n    '#states':\n      visible:\n        ':input[name=\"j_y_participe\"]':\n          value: oui\n        ':input[name=\"option_de_participation\"]':\n          value: oui\nhebergement:\n  '#type': webform_wizard_page\n  '#title': Hébergement\n  '#states':\n    invisible:\n      ':input[name=\"j_y_participe\"]':\n        value: Non\n  '#prev_button_label': Précédent\n  '#next_button_label': Suivant\n  besoin_d_hebergement_:\n    '#type': radios\n    '#title': 'Besoin d''hébergement ?'\n    '#options':\n      Oui: oui\n      Non: non\n  choix_de_l_hotel:\n    '#type': webform_entity_select\n    '#title': 'Choix de l''hôtel'\n    '#states':\n      invisible:\n        ':input[name=\"besoin_d_hebergement_\"]':\n          value: Non\n    '#target_type': node\n    '#selection_handler': 'default:node'\n    '#selection_settings':\n      target_bundles:\n        hotel: hotel\n  date_d_arrivee:\n    '#type': datetime\n    '#title': 'Date d''arrivée'\n    '#states':\n      invisible:\n        ':input[name=\"besoin_d_hebergement_\"]':\n          value: Non\n    '#date_time_step': '60'\n  date_de_depart:\n    '#type': datetime\n    '#title': 'Date de départ'\n    '#states':\n      invisible:\n        ':input[name=\"besoin_d_hebergement_\"]':\n          value: Non\n    '#date_time_step': '60'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Adhérez"
+elements: "evaluator_information:\n  '#title': 'Your Information'\n  '#type': webform_section\n  evaluator_first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  evaluator_last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  evaluator_job_title:\n    '#type': textfield\n    '#title': 'Job Title'\n    '#required': true\n  evaluator_relationship:\n    '#type': webform_select_other\n    '#title': 'Relationship with employee'\n    '#options':\n      Coworker: Coworker\n      Supervisor: Supervisor\n    '#required': true\nemployee_information:\n  '#title': 'Employee Information'\n  '#type': webform_section\n  employee_first_name:\n    '#title': 'First Name'\n    '#type': textfield\n    '#required': true\n  employee_last_name:\n    '#title': 'Last Name'\n    '#type': textfield\n    '#required': true\n  employee_job_title:\n    '#type': textfield\n    '#title': 'Job Title'\n    '#required': true\n  employee_ratings:\n    '#type': webform_likert\n    '#title': 'How would you rate the employee''s…'\n    '#questions':\n      attendance: Attendance\n      attire: Attire\n      professionalism: Professionalism\n      work_area: 'Work area'\n      ability: 'Ability to do the job'\n      work_with_others: 'Ability to work with others'\n      receive_feedback: 'Ability to receive feedback/criticism'\n      adaptabily: 'Ability to adapt'\n      learning: 'Willingness to learn'\n      participation: 'Willingness to participate'\n      work_ethic: 'Work ethic'\n      quality: 'Quality of work'\n    '#answers': likert_quality\n    '#required': true\n  employee_qualities:\n    '#type': textarea\n    '#title': 'What are the employee''s top qualities?'\n    '#required': true\n  employee_improve:\n    '#type': textarea\n    '#title': 'In what ways could the employee improve?'\n    '#required': true\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Apply\n"
 css: ''
 javascript: ''
 settings:
   ajax: false
   ajax_scroll_top: form
   page: true
-  page_submit_path: /adhesion
+  page_submit_path: ''
   page_confirm_path: ''
   form_title: source_entity_webform
   form_submit_once: false
@@ -79,8 +84,8 @@ settings:
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
-  preview: 2
-  preview_label: Récap
+  preview: 0
+  preview_label: ''
   preview_title: ''
   preview_message: ''
   preview_attributes: {  }
@@ -93,8 +98,8 @@ settings:
   draft_saved_message: ''
   draft_loaded_message: ''
   confirmation_type: page
-  confirmation_title: 'Adhésion réussie'
-  confirmation_message: 'Merci,&nbsp;[webform_submission:values:first_name]'
+  confirmation_title: ''
+  confirmation_message: 'Thank you for applying.'
   confirmation_url: ''
   confirmation_attributes: {  }
   confirmation_back: true

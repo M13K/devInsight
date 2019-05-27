@@ -1,0 +1,9 @@
+uuid: c78bc74a-377c-4210-b766-cb1078d49f98
+langcode: en
+status: true
+dependencies: {  }
+id: hotel
+label: Hôtel
+category: Hôtel
+likert: true
+options: ''

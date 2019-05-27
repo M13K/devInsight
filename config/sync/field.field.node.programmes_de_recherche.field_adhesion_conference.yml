@@ -1,0 +1,32 @@
+uuid: a6b5f23b-591c-430b-8d0d-b11ca05c8eea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adhesion_conference
+    - node.type.programmes_de_recherche
+    - webform.webform.formumaire_d_adhesion_aux_confer
+  module:
+    - webform
+id: node.programmes_de_recherche.field_adhesion_conference
+field_name: field_adhesion_conference
+entity_type: node
+bundle: programmes_de_recherche
+label: 'Adhésion conférence'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: b7adccd9-3ca0-4e30-bcd3-1123bc56c3da
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform
