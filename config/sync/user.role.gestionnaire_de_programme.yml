@@ -8,6 +8,7 @@ weight: -7
 is_admin: null
 permissions:
   - 'access budget'
+  - 'access content'
   - 'create progconf content'
   - 'create programmes_de_recherche content'
   - 'delete own progconf content'
@@ -19,8 +20,5 @@ permissions:
   - 'revert progconf revisions'
   - 'use validation_conferences transition create_new_draft'
   - 'use validation_conferences transition en_attente_de_validation'
-  - 'view any unpublished content'
-  - 'view latest version'
-  - 'use validation_conferences transition publish'
-  - 'view progconf revisions'
+  - 'view own unpublished content'
   - 'view programmes_de_recherche revisions'

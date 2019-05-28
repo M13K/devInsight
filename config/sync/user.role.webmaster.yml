@@ -7,6 +7,7 @@ label: webmaster
 weight: -6
 is_admin: null
 permissions:
+  - 'access content'
   - 'create pages_publiques content'
   - 'create progconf content'
   - 'delete any pages_publiques content'
@@ -22,6 +23,8 @@ permissions:
   - 'edit own pages_publiques content'
   - 'edit own progconf content'
   - 'revert progconf revisions'
+  - 'revert progconf revisions'
+  - 'revert programmes_de_recherche revisions'
   - 'revert programmes_de_recherche revisions'
   - 'use validation_conferences transition create_new_draft'
   - 'use validation_conferences transition en_attente_de_validation'
@@ -30,7 +33,6 @@ permissions:
   - 'use validation_conferences transition validation'
   - 'view any unpublished content'
   - 'view latest version'
-  - 'revert progconf revisions'
-  - 'revert programmes_de_recherche revisions'
+  - 'view own unpublished content'
   - 'view progconf revisions'
   - 'view programmes_de_recherche revisions'

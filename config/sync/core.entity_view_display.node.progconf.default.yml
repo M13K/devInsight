@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.progconf.field_datefin
     - field.field.node.progconf.field_description_conference
     - field.field.node.progconf.field_hotel_recommandes
-    - field.field.node.progconf.field_hotels
     - field.field.node.progconf.field_lieu
     - field.field.node.progconf.field_nombre_de_nuits
     - field.field.node.progconf.field_organisateur
@@ -29,6 +28,11 @@ targetEntityType: node
 bundle: progconf
 mode: default
 content:
+  content_moderation_control:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_adherant_:
     weight: 10
     label: above
@@ -150,7 +154,5 @@ content:
     region: content
 hidden:
   addtoany: true
-  content_moderation_control: true
-  field_hotels: true
   langcode: true
   links: true

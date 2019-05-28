@@ -12,6 +12,11 @@ targetEntityType: node
 bundle: progconf
 mode: teaser
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 100
     settings: {  }
@@ -19,6 +24,8 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_adherant_: true
+  field_adhesion_conference: true
   field_budgetconf: true
   field_datedebut: true
   field_datefin: true
