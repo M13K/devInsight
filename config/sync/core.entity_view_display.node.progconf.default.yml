@@ -1,0 +1,135 @@
+uuid: 9cda3819-a648-477b-8cbb-43a61aa00459
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.progconf.field_budgetconf
+    - field.field.node.progconf.field_datedebut
+    - field.field.node.progconf.field_datefin
+    - field.field.node.progconf.field_description_conference
+    - field.field.node.progconf.field_hotel_recommandes
+    - field.field.node.progconf.field_lieu
+    - field.field.node.progconf.field_nombre_de_nuits
+    - field.field.node.progconf.field_organisateur
+    - field.field.node.progconf.field_photo
+    - node.type.progconf
+  module:
+    - datetime
+    - ds
+    - geolocation
+    - image
+    - text
+    - user
+id: node.progconf.default
+targetEntityType: node
+bundle: progconf
+mode: default
+content:
+  field_budgetconf:
+    weight: 5
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_datedebut:
+    weight: 2
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'l j F'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_datefin:
+    weight: 3
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'l j F'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_description_conference:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_hotel_recommandes:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_lieu:
+    weight: 7
+    label: above
+    settings:
+      set_marker: '1'
+      title: ''
+      info_text: ''
+      google_map_settings:
+        height: 200px
+        width: 100%
+        type: ROADMAP
+        zoom: '10'
+        maxZoom: 18
+        minZoom: 0
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        rotateControl: 0
+        fullscreenControl: 0
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      use_overridden_map_settings: 0
+      common_map: ''
+    third_party_settings: {  }
+    type: geolocation_map
+    region: content
+  field_nombre_de_nuits:
+    weight: 6
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: number_unformatted
+    region: content
+  field_organisateur:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    type: image
+    region: content
+hidden:
+  addtoany: true
+  content_moderation_control: true
+  langcode: true
+  links: true

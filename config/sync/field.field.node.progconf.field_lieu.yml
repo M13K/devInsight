@@ -1,0 +1,21 @@
+uuid: c57b6d53-9ce5-4c37-9736-1bcfd3a4733b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu
+    - node.type.progconf
+  module:
+    - geolocation
+id: node.progconf.field_lieu
+field_name: field_lieu
+entity_type: node
+bundle: progconf
+label: Lieu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

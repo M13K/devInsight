@@ -1,0 +1,26 @@
+uuid: 83bb56dd-a712-44a2-ba32-04322328bc39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pages_publiques.field_contenu
+    - node.type.pages_publiques
+  module:
+    - text
+    - user
+id: node.pages_publiques.default
+targetEntityType: node
+bundle: pages_publiques
+mode: default
+content:
+  field_contenu:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

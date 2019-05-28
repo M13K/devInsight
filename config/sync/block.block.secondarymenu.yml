@@ -1,0 +1,26 @@
+uuid: c8fb0836-5598-4aab-96ac-2a998e08a247
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-menu
+  module:
+    - system
+  theme:
+    - corporate_blue
+_core:
+  default_config_hash: cNqEr-uyGtyqKyPe2qyBq50NlHhJcjp2KCUfIY9OGo8
+id: secondarymenu
+theme: corporate_blue
+region: sub_navigation
+weight: -11
+provider: null
+plugin: 'system_menu_block:secondary-menu'
+settings:
+  id: 'system_menu_block:secondary-menu'
+  label: 'Secondary Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

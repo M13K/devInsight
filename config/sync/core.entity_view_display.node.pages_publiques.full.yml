@@ -1,0 +1,27 @@
+uuid: be18a72c-f8df-4aa1-8b21-365013be2299
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.pages_publiques.field_contenu
+    - node.type.pages_publiques
+  module:
+    - text
+    - user
+id: node.pages_publiques.full
+targetEntityType: node
+bundle: pages_publiques
+mode: full
+content:
+  field_contenu:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

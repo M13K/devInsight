@@ -1,0 +1,23 @@
+uuid: 98b9fc12-e4dd-4a7a-b1e6-dbef9d32a91d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_de_nuits
+    - node.type.progconf
+id: node.progconf.field_nombre_de_nuits
+field_name: field_nombre_de_nuits
+entity_type: node
+bundle: progconf
+label: Nuitées
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 1
+  max: !!float 3
+  prefix: ''
+  suffix: ''
+field_type: decimal

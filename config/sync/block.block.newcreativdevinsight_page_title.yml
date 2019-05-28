@@ -1,0 +1,20 @@
+uuid: 54d4c8cb-6f75-4156-836d-d6460f8fa008
+langcode: en
+status: true
+dependencies:
+  theme:
+    - newcreativdevinsight
+_core:
+  default_config_hash: _zLaasd8lWP6MChTbVkSrx_t2rGh5IMwXBtbR9u9MF8
+id: newcreativdevinsight_page_title
+theme: newcreativdevinsight
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

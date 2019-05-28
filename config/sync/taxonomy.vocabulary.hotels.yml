@@ -1,0 +1,9 @@
+uuid: db627636-bc44-4db6-971d-f335622b8a62
+langcode: en
+status: true
+dependencies: {  }
+name: Hotels
+vid: hotels
+description: ''
+hierarchy: 0
+weight: 0

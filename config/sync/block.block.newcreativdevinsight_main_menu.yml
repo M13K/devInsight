@@ -1,0 +1,26 @@
+uuid: 218da77a-6fb5-429d-bf79-7d9c712b2eff
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - newcreativdevinsight
+_core:
+  default_config_hash: sAaHyx13V5tpanuFeR__cxE9RvypNbu1-ffpGZDWntU
+id: newcreativdevinsight_main_menu
+theme: newcreativdevinsight
+region: primary_menu
+weight: 10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

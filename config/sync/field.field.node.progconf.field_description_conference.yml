@@ -1,0 +1,21 @@
+uuid: f6a2e736-5d11-412c-b639-cb64ae463e92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_conference
+    - node.type.progconf
+  module:
+    - text
+id: node.progconf.field_description_conference
+field_name: field_description_conference
+entity_type: node
+bundle: progconf
+label: 'Description conférence'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

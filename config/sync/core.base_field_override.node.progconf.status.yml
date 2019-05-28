@@ -1,0 +1,22 @@
+uuid: 1a56c7b9-782d-41b1-92b6-6460708d0ccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.progconf
+id: node.progconf.status
+field_name: status
+entity_type: node
+bundle: progconf
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

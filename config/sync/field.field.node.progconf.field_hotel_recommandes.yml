@@ -1,0 +1,28 @@
+uuid: 9136a3e0-2a58-45fd-9749-19d06dce21cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_recommandes
+    - node.type.hotel
+    - node.type.progconf
+id: node.progconf.field_hotel_recommandes
+field_name: field_hotel_recommandes
+entity_type: node
+bundle: progconf
+label: 'Hôtel recommandés'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      hotel: hotel
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
