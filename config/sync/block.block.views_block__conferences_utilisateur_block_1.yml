@@ -1,0 +1,31 @@
+uuid: 2be64131-b5b8-4fcc-93ce-71fbea4f8fcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.conferences_utilisateur
+  module:
+    - system
+    - views
+  theme:
+    - newcreativdevinsight
+id: views_block__conferences_utilisateur_block_1
+theme: newcreativdevinsight
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:conferences_utilisateur-block_1'
+settings:
+  id: 'views_block:conferences_utilisateur-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
