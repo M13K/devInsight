@@ -1,4 +1,4 @@
-uuid: 6aa0aed1-7caa-41cd-bed1-4fd3fd62ddf4
+uuid: 6bc1d0c7-975d-403e-8378-c0289de506c4
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ dependencies:
     - system
     - webform
   theme:
-    - creativDevInsight
+    - newcreativdevinsight
 id: webform
-theme: creativDevInsight
+theme: newcreativdevinsight
 region: sidebar_second
-weight: -7
+weight: 0
 provider: null
 plugin: webform_block
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/programmes*'
+    pages: '/conferences*'
     negate: false
     context_mapping: {  }

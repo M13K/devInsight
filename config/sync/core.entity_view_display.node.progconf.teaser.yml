@@ -19,4 +19,14 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_budgetconf: true
+  field_datedebut: true
+  field_datefin: true
+  field_description_conference: true
+  field_hotel_recommandes: true
+  field_hotels: true
+  field_lieu: true
+  field_nombre_de_nuits: true
+  field_organisateur: true
+  field_photo: true
   langcode: true

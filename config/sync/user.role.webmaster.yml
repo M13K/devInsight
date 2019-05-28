@@ -13,7 +13,6 @@ permissions:
   - 'delete any programmes_de_recherche content'
   - 'delete own pages_publiques content'
   - 'delete progconf revisions'
-  - 'delete own programmes_de_recherche content'
   - 'delete programmes_de_recherche revisions'
   - 'edit any pages_publiques content'
   - 'edit any progconf content'

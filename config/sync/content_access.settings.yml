@@ -11,5 +11,3 @@ content_access_node_type:
   hotel: 'a:3:{s:8:"view_own";a:1:{i:0;s:13:"authenticated";}s:4:"view";a:1:{i:0;s:13:"authenticated";}s:8:"per_node";i:1;}'
   progconf: 'a:3:{s:4:"view";a:4:{i:0;s:11:"participant";i:1;s:25:"gestionnaire_de_programme";i:2;s:9:"webmaster";i:3;s:13:"administrator";}s:8:"per_node";i:1;s:8:"view_own";a:3:{i:0;s:25:"gestionnaire_de_programme";i:1;s:9:"webmaster";i:2;s:13:"administrator";}}'
   pages_publiques: 'a:3:{s:8:"per_node";i:1;s:8:"view_own";a:4:{i:0;s:9:"anonymous";i:1;s:11:"participant";i:2;s:9:"webmaster";i:3;s:13:"administrator";}s:4:"view";a:4:{i:0;s:9:"anonymous";i:1;s:11:"participant";i:2;s:9:"webmaster";i:3;s:13:"administrator";}}'
-
-

@@ -268,7 +268,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: Conferences
+      path: conferences
       menu:
         type: normal
         title: Conférences
