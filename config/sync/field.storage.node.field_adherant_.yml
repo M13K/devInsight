@@ -1,17 +1,17 @@
-uuid: 898a189e-badf-4947-9dd7-d67e107f32d5
+uuid: 6ab2a54f-68a8-4107-b599-a1c589d1ed6a
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - webform
-id: node.field_adhesion_conference
-field_name: field_adhesion_conference
+    - user
+id: node.field_adherant_
+field_name: field_adherant_
 entity_type: node
-type: webform
+type: entity_reference
 settings:
-  target_type: webform
-module: webform
+  target_type: user
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -1,0 +1,22 @@
+uuid: 8eb92f05-7001-4c85-9bed-845beff8c76d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: aliases_node_progconf
+label: 'Aliases node progconf'
+type: 'canonical_entities:node'
+pattern: '/conferences/[node:title]'
+selection_criteria:
+  92d58bec-26cf-4efa-b423-11d397c26e94:
+    id: node_type
+    bundles:
+      progconf: progconf
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 92d58bec-26cf-4efa-b423-11d397c26e94
+selection_logic: and
+weight: -5
+relationships: {  }
