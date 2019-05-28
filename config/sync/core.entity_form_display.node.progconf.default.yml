@@ -3,11 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.progconf.field_adherant_
+    - field.field.node.progconf.field_adhesion_conference
     - field.field.node.progconf.field_budgetconf
     - field.field.node.progconf.field_datedebut
     - field.field.node.progconf.field_datefin
     - field.field.node.progconf.field_description_conference
     - field.field.node.progconf.field_hotel_recommandes
+    - field.field.node.progconf.field_hotels
     - field.field.node.progconf.field_lieu
     - field.field.node.progconf.field_nombre_de_nuits
     - field.field.node.progconf.field_organisateur
@@ -20,11 +23,28 @@ dependencies:
     - geolocation
     - image
     - text
+    - webform
 id: node.progconf.default
 targetEntityType: node
 bundle: progconf
 mode: default
 content:
+  field_adherant_:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_adhesion_conference:
+    weight: 27
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
   field_budgetconf:
     weight: 6
     settings:
@@ -54,6 +74,15 @@ content:
     region: content
   field_hotel_recommandes:
     weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_hotels:
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60

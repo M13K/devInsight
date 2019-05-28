@@ -21,5 +21,6 @@ permissions:
   - 'use validation_conferences transition en_attente_de_validation'
   - 'view any unpublished content'
   - 'view latest version'
+  - 'use validation_conferences transition publish'
   - 'view progconf revisions'
   - 'view programmes_de_recherche revisions'

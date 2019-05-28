@@ -30,5 +30,7 @@ permissions:
   - 'use validation_conferences transition validation'
   - 'view any unpublished content'
   - 'view latest version'
+  - 'revert progconf revisions'
+  - 'revert programmes_de_recherche revisions'
   - 'view progconf revisions'
   - 'view programmes_de_recherche revisions'

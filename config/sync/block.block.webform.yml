@@ -1,0 +1,31 @@
+uuid: 6bc1d0c7-975d-403e-8378-c0289de506c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.formumaire_d_adhesion_aux_confer
+  module:
+    - system
+    - webform
+  theme:
+    - newcreativdevinsight
+id: webform
+theme: newcreativdevinsight
+region: sidebar_second
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Adhésion au programme'
+  provider: webform
+  label_display: visible
+  webform_id: formumaire_d_adhesion_aux_confer
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: '/conferences*'
+    negate: false
+    context_mapping: {  }
