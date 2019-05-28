@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.progconf.field_datefin
     - field.field.node.progconf.field_description_conference
     - field.field.node.progconf.field_hotel_recommandes
-    - field.field.node.progconf.field_hotels
     - field.field.node.progconf.field_lieu
     - field.field.node.progconf.field_nombre_de_nuits
     - field.field.node.progconf.field_organisateur
@@ -30,7 +29,7 @@ bundle: progconf
 mode: default
 content:
   field_adherant_:
-    weight: 28
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60
@@ -39,7 +38,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_adhesion_conference:
-    weight: 27
+    weight: 13
     settings:
       default_data: true
     third_party_settings: {  }
@@ -73,16 +72,7 @@ content:
     type: text_textarea
     region: content
   field_hotel_recommandes:
-    weight: 26
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_hotels:
-    weight: 10
+    weight: 12
     settings:
       match_operator: CONTAINS
       size: 60
@@ -151,13 +141,13 @@ content:
     region: content
   moderation_state:
     type: moderation_state_default
-    weight: 12
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 11
+    weight: 10
     region: content
     settings:
       display_label: true
@@ -177,9 +167,17 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   created: true
   langcode: true
   path: true
   sticky: true
-  uid: true
