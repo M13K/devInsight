@@ -1,0 +1,14 @@
+uuid: aa2dd03b-e893-469f-a088-7359cbeca8aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - action
+id: send_email
+label: 'Send email'
+type: system
+plugin: action_send_email_action
+configuration:
+  recipient: webmaster@devinsight.com
+  subject: 'Vous avez une conférence a valider'
+  message: "Bonjour,\r\n\r\nLe gestionnaire de programme TOKEN USER a ajouté la conférence TOKEN CONTENT a valider.\r\n"
