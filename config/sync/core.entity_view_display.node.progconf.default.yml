@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.progconf.field_nombre_de_nuits
     - field.field.node.progconf.field_organisateur
     - field.field.node.progconf.field_photo
+    - image.style.photo_conf_1200x488
     - node.type.progconf
   module:
     - datetime
@@ -145,7 +146,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: photo_conf_1200x488
       image_link: ''
     third_party_settings:
       ds:
