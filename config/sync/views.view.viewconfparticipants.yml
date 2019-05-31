@@ -5,6 +5,9 @@ dependencies:
   config:
     - field.storage.node.field_datedebut
     - field.storage.node.field_datefin
+    - field.storage.node.field_description_conference
+    - field.storage.node.field_photo
+    - image.style.large
     - field.storage.node.field_photo
     - image.style.thumbnail
     - node.type.progconf
@@ -15,10 +18,12 @@ dependencies:
     - datetime
     - image
     - node
+    - text
     - user
 id: viewconfparticipants
 label: viewConfParticipants
 module: views
+description: 'Liste des conférences participants'
 description: 'Liste des conférences vision webmaster'
 tag: ''
 base_table: node_field_data
@@ -77,6 +82,16 @@ display:
             previous: ‹‹
             next: ››
       style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 2
+          automatic_width: true
+          alignment: vertical
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
         type: default
       row:
         type: fields
@@ -332,6 +347,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
+            image_style: large
+            image_link: content
             image_style: thumbnail
             image_link: ''
           group_column: ''
@@ -345,6 +362,122 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_description_conference:
+          id: field_description_conference
+          table: node__field_description_conference
+          field: field_description_conference
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: h3
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_trimmed
+          settings:
+            trim_length: 300
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        view_node:
+          id: view_node
+          table: node
+          field: view_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: 'Je participe'
+          output_url_as_text: false
+          absolute: false
+          entity_type: node
+          plugin_id: entity_link
       filters:
         type:
           id: type
@@ -417,6 +550,7 @@ display:
       tags:
         - 'config:field.storage.node.field_datedebut'
         - 'config:field.storage.node.field_datefin'
+        - 'config:field.storage.node.field_description_conference'
         - 'config:field.storage.node.field_photo'
   page_1:
     display_plugin: page
@@ -443,4 +577,5 @@ display:
       tags:
         - 'config:field.storage.node.field_datedebut'
         - 'config:field.storage.node.field_datefin'
+        - 'config:field.storage.node.field_description_conference'
         - 'config:field.storage.node.field_photo'

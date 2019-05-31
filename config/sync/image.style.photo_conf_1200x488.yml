@@ -1,0 +1,15 @@
+uuid: 32d48274-a969-44d9-ba52-cb8dfbcfa86a
+langcode: en
+status: true
+dependencies: {  }
+name: photo_conf_1200x488
+label: 'photo_conf 1200x488'
+effects:
+  8a0c58b9-12c9-4ed4-8f57-ae75d9e5b5e0:
+    uuid: 8a0c58b9-12c9-4ed4-8f57-ae75d9e5b5e0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 488
+      anchor: center-center
