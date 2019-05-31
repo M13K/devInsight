@@ -8,6 +8,8 @@ dependencies:
     - field.storage.node.field_description_conference
     - field.storage.node.field_photo
     - image.style.large
+    - field.storage.node.field_photo
+    - image.style.thumbnail
     - node.type.progconf
     - system.menu.main
     - user.role.administrator
@@ -22,6 +24,7 @@ id: viewconfparticipants
 label: viewConfParticipants
 module: views
 description: 'Liste des conférences participants'
+description: 'Liste des conférences vision webmaster'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -89,6 +92,7 @@ display:
           col_class_custom: ''
           row_class_default: true
           row_class_custom: ''
+        type: default
       row:
         type: fields
         options:
@@ -345,6 +349,8 @@ display:
           settings:
             image_style: large
             image_link: content
+            image_style: thumbnail
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
