@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Uninstall function for the corporate blue team members module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function corporate_blue_team_members_uninstall() {
+  // Mainly for deleting front page slider title and body
+  // (node default content for this content type).
+  $node_type = 'team_members';
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', $node_type, '=')
+    ->execute();
+  entity_delete_multiple('node', $nids);
+}

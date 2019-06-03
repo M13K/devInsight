@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-menu
+  module:
+    - system
+  theme:
+    - corporate_blue
+id: secondarymenu
+theme: corporate_blue
+region: sub_navigation
+weight: -11
+provider: null
+plugin: 'system_menu_block:secondary-menu'
+settings:
+  id: 'system_menu_block:secondary-menu'
+  label: 'Secondary Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

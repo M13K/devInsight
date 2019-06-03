@@ -1,0 +1,279 @@
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+.navbar-header button {
+  margin-right: 20px;
+}
+
+header.navbar .navbar-collapse {
+  @include breakpoint(sm) {
+    .logo {
+      float: none;
+    }
+    ul.menu {
+      float: none;
+      clear: both;
+      li {
+        display: block;
+        float: none;
+        width: 100%;
+        a {
+          border-radius: 0;
+        }
+        .dropdown-menu {
+          position: relative;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.navbar-btn.logo {
+  margin-left: 15px;
+}
+.header-strech {
+  background: #fff;
+  padding: 0px;
+  border-bottom: 1px solid #F3F3F3;
+  .navbar-nav {
+    float: right;
+    > li {
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        font-size: 0.799999em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 4px;
+        color: #337AB7;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      &:hover > a {
+        background: #337AB7;
+        color: #fff;
+        border-radius: 4px;
+      }
+    }
+  }
+  .header-search {
+    position: relative;
+    .input-group {
+      width: 98%;
+    }
+    input[type="search"],
+    button[type="submit"] {
+      border-radius: 20em;
+      border-right: 0;
+      box-shadow: none;
+      &:focus {
+        border-color: #D8D8D8;
+      }
+    }
+    input[type="search"] {
+      text-indent: 8px;
+      font-size: 0.8em;
+    }
+    button[type="submit"] {
+      width: 30px;
+      background: #DCDCDC;
+      background: transparent;
+      border: transparent;
+      height: 34px;
+      position: absolute;
+      right: 4px;
+      top: 0px;
+      border-radius: 25em;
+      .glyphicon {
+        &:before {
+          color: #DEDEDE;
+        }
+      }
+      &:focus {
+        border-color: transparent;
+      }
+      &:hover {
+        .glyphicon {
+          &:before {
+            color: #337ab7;
+          }
+        }
+      }
+    }
+    h2 {
+      display: none;
+    }
+  }
+  .custom-header-block {
+    margin-top: 15px;
+  }
+  header {
+    margin-bottom: 0;
+  }
+  .header-subnavigation {
+    .region-sub-navigation {
+      ul {
+        li {
+          a {
+            position: relative;
+            font-size: 0.9em;
+            font-weight: 300;
+            text-transform: capitalize;
+            color: #8C8C8C;
+            &:before {
+              content: "\f054";
+              font-family: FontAwesome;
+              font-style: normal;
+              font-weight: normal;
+              text-decoration: inherit;
+              font-size: 0.5em;
+              position: absolute;
+              top: 13px;
+              left: 0px;
+              color: #8C8C8C;
+              padding-right: 0.2em;
+              padding-left: 0.2em;
+              margin-right: 0.5em;
+            }
+            &:hover {
+              background: transparent;
+              color: #337AB7;
+            }
+            &:focus {
+              background: transparent;
+              box-shadow: 0;
+              outline: 0;
+              color: #337AB7;
+            }
+          }
+          &:hover {
+            background: transparent;
+            > a {
+              background: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.header-strech {
+  .navbar {
+    ul {
+      float: right;
+      margin-top: 8px;
+      li {
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          font-size: 0.799999em;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          text-transform: uppercase;
+          border-radius: 4px;
+          color: #337AB7;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          &:focus,
+          &:active {
+            background: #337AB7;
+            color: #fff;
+            border-radius: 4px;
+          }
+        }
+        &:hover > a {
+          background: #337AB7;
+          color: #fff;
+          border-radius: 4px;
+        }
+        > ul {
+          border-top: 2px solid #337AB7;
+          border-bottom: 2px solid #337AB7;
+          padding-top: 0;
+          padding-bottom: 0;
+          li {
+            border-radius: 0;
+            display: block;
+            width: 100%;
+            a {
+              border-radius: 0;
+              &:hover {
+                color: white;
+                border-radius: 0;
+                background: #3386CF;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.top-toolbar {
+  background: #337AB7;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  color: #fff;
+  .social-sharing-header {
+    h2 {
+      display: none;
+    }
+    ul {
+      margin-top: 7px;
+      float: right;
+      list-style: none;
+      margin-bottom: 0;
+      li {
+        font-size: 10px;
+        display: inline-block;
+        margin-right: 4px;
+        a {
+          color: #1A3C58;
+          i {
+            font-size: 1.788888em;
+          }
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .user-navigation-header {
+    h2 {
+      display: none;
+    }
+    ul.navbar-nav {
+      float: left !important;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      margin-bottom: 0;
+      li {
+        display: inline-block;
+        a {
+          color: #1A3C58;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          font-size: 0.8em;
+          text-transform: capitalize;
+          &:hover,
+          &:active {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

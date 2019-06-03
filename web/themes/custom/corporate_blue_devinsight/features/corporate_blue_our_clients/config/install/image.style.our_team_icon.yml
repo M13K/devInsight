@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: our_team_icon
+label: 'Our team icon'
+effects:
+  d99ccb68-3c18-4271-9f4e-844e1ea19f6c:
+    uuid: d99ccb68-3c18-4271-9f4e-844e1ea19f6c
+    id: image_scale
+    weight: 1
+    data:
+      width: 250
+      height: 250
+      upscale: false

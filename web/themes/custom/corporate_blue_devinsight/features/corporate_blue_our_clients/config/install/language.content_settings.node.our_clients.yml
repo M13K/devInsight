@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.our_clients
+id: node.our_clients
+target_entity_type_id: node
+target_bundle: our_clients
+default_langcode: site_default
+language_alterable: false

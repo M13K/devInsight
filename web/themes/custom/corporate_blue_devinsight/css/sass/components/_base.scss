@@ -1,0 +1,43 @@
+body {
+  background: #FBFBFB;
+  margin-top: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+.main-container {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  min-height: 350px;
+  @include breakpoint(lg) {
+    min-height: 250px;
+  }
+}
+.author {
+  margin-bottom: 20px;
+  font-size: 0.7888888em;
+  text-transform: uppercase;
+  color: #337AB7;
+  span[rel="schema:author"]:before {
+    content: "\f007";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #9A9A9A;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+  }
+  span[property="schema:dateCreated"]:before {
+    content: "\f017";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #9A9A9A;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+  }
+}

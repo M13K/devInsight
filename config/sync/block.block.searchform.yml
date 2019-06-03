@@ -1,6 +1,6 @@
 uuid: cddc98a8-7705-4dc1-86e4-821c05620ad8
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
@@ -10,8 +10,8 @@ _core:
   default_config_hash: jaHET8nYjQRigqdMuR-92G04vuQ6NfxhsRWQiaQIF68
 id: searchform
 theme: corporate_blue
-region: search_header
-weight: -11
+region: navigation
+weight: -2
 provider: null
 plugin: search_form_block
 settings:

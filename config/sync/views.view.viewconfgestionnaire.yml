@@ -9,7 +9,6 @@ dependencies:
     - node.type.progconf
     - system.menu.main
     - user.role.administrator
-    - user.role.gestionnaire_de_programme
   module:
     - content_moderation
     - datetime
@@ -20,7 +19,6 @@ id: viewconfgestionnaire
 label: viewConfGestionnaire
 module: views
 description: 'Liste des conférences gestionnaire'
-description: 'Liste des conférences vision webmaster'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -36,7 +34,6 @@ display:
         type: role
         options:
           role:
-            gestionnaire_de_programme: gestionnaire_de_programme
             administrator: administrator
       cache:
         type: tag

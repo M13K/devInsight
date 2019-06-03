@@ -1,0 +1,36 @@
+uuid: f57821d3-349b-4dc9-8e25-0110c16260f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.front_page_slider.body
+    - field.field.node.front_page_slider.field_front_slider_image
+    - field.field.node.front_page_slider.field_slider_short_description
+    - node.type.front_page_slider
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: PPu76oC7sSIZYasAJr8OIYnP0ICySrlYtKVuxZUVmeQ
+id: node.front_page_slider.teaser
+targetEntityType: node
+bundle: front_page_slider
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_front_slider_image: true
+  field_slider_short_description: true
+  langcode: true

@@ -1,0 +1,96 @@
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="number"] {
+  border: 0;
+  border: 1px solid #D8D8D8;
+  padding: 0.4555555em;
+  color: #777;
+  line-height: 21px;
+  font-size: 0.9em;
+  border-radius: 0;
+}
+button[type="button"],
+button[type="submit"],
+button[type="reset"],
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0;
+  padding: 0.5em;
+  color: #fff;
+  font-weight: 400;
+  background: #0163A7;
+  margin-right: 0.4em;
+}
+input[type="color"] {
+  width: 28px;
+  height: 28px;
+}
+input[type="radio"] {
+  display: inline-block;
+}
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime"],
+input[type="datetime-local"] {
+  min-width: 33%;
+  border: 0;
+  border: 1px solid #D8D8D8;
+  padding: 0.4555555em;
+  color: #777;
+  font-size: 0.9em;
+}
+button[type="button"],
+button[type="submit"],
+button[type="reset"] {
+  margin-right: 0.1em;
+}
+select,
+textarea {
+  font-size: 0.9em;
+  padding: 0.4555555em;
+  color: #777;
+  line-height: 21px;
+  border: 1px solid #D8D8D8;
+  background: #fff;
+  min-width: 33%;
+  max-height: 100px;
+}
+label {
+  font-weight: 400;
+  font-size: 0.8999999em;
+  color: #777;
+  margin-bottom: 7px;
+}
+legend {
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+}
+form {
+  fieldset {
+    p {
+      label {
+        width: 20%;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="url"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="search"],
+      input[type="number"] {
+        width: 79%;
+      }
+    }
+  }
+  a {
+    font-size: 0.889999em;
+    border: 1px solid red;
+  }
+}

@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: team_members_image
+label: 'Team members image (200×200)'
+effects:
+  8d131624-952c-4b99-bc42-feba214261cb:
+    uuid: 8d131624-952c-4b99-bc42-feba214261cb
+    id: image_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      anchor: center-center

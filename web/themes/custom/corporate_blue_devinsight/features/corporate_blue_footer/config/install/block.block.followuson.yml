@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  theme:
+    - corporate_blue
+id: followuson
+theme: corporate_blue
+region: footer_third
+weight: -8
+provider: null
+plugin: 'block_content:7c103722-8b4c-48e5-9a3e-ecbb68b9fe67'
+settings:
+  id: 'block_content:7c103722-8b4c-48e5-9a3e-ecbb68b9fe67'
+  label: 'Follow us on'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.our_clients.field_body
+    - field.field.node.our_clients.field_description
+    - field.field.node.our_clients.field_logo
+    - node.type.our_clients
+  module:
+    - user
+id: node.our_clients.teaser
+targetEntityType: node
+bundle: our_clients
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_body: true
+  field_description: true
+  field_logo: true
+  langcode: true
