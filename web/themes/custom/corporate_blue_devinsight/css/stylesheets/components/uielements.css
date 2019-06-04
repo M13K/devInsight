@@ -1,0 +1,84 @@
+/* line 1, ../../sass/components/uielements.scss */
+a {
+  -webkit-transition: all .5s;
+  /* Safari */
+  transition: all .5s;
+}
+
+/* line 6, ../../sass/components/uielements.scss */
+ul.links {
+  margin-top: 20px;
+}
+/* line 8, ../../sass/components/uielements.scss */
+ul.links a {
+  background: #337AB7;
+  padding: 0.5em;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.888889em;
+  border-radius: 3px;
+  text-decoration: none;
+}
+/* line 16, ../../sass/components/uielements.scss */
+ul.links a:hover {
+  background: #255884;
+}
+/* line 20, ../../sass/components/uielements.scss */
+ul.links li {
+  position: relative;
+}
+/* line 23, ../../sass/components/uielements.scss */
+ul.links li.node-readmore a {
+  padding-left: 22px;
+}
+/* line 25, ../../sass/components/uielements.scss */
+ul.links li.node-readmore a:before {
+  content: "\f054 \f054";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 0.5em;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  /*--adjust as necessary--*/
+  color: #efeefe;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  margin-right: 0.5em;
+}
+/* line 44, ../../sass/components/uielements.scss */
+ul.links li.comment-add a {
+  padding-left: 30px;
+}
+/* line 46, ../../sass/components/uielements.scss */
+ul.links li.comment-add a:before {
+  content: "\f075";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  /*--adjust as necessary--*/
+  color: #efeefe;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  margin-right: 0.5em;
+}
+/* line 63, ../../sass/components/uielements.scss */
+ul.links li.comment-forbidden {
+  font-size: 0.8888888em;
+}
+/* line 65, ../../sass/components/uielements.scss */
+ul.links li.comment-forbidden a {
+  background: transparent;
+  color: #337AB7;
+}
+/* line 68, ../../sass/components/uielements.scss */
+ul.links li.comment-forbidden a:hover {
+  background: transparent;
+  color: #255884;
+}

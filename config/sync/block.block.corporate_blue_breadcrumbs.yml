@@ -11,7 +11,7 @@ _core:
 id: corporate_blue_breadcrumbs
 theme: corporate_blue
 region: navigation
-weight: -8
+weight: -3
 provider: null
 plugin: system_breadcrumb_block
 settings:

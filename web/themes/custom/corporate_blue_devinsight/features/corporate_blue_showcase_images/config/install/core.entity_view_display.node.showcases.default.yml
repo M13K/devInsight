@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.showcases.body
+    - field.field.node.showcases.field_showcase_images
+    - node.type.showcases
+  module:
+    - image
+    - text
+    - user
+id: node.showcases.default
+targetEntityType: node
+bundle: showcases
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_showcase_images:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden:
+  langcode: true

@@ -1,0 +1,29 @@
+.navbar-default {
+  border: 0;
+  background-color: transparent;
+}
+
+.header-subnavigation {
+  li {
+    display: inline-block;
+    font-size: 0.8889999em;
+    text-align: right;
+    float: right;
+    a {
+      
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+.ipad {
+  header.navbar .navbar-collapse ul.menu {
+    float: right;
+  }
+  header.navbar .navbar-collapse ul.menu li {
+    display: inline-block;
+    width: inherit;
+  }
+}

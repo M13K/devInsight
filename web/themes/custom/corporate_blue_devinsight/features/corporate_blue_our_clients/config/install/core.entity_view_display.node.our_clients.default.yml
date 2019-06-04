@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.our_clients.field_body
+    - field.field.node.our_clients.field_description
+    - field.field.node.our_clients.field_logo
+    - node.type.our_clients
+  module:
+    - image
+    - text
+    - user
+id: node.our_clients.default
+targetEntityType: node
+bundle: our_clients
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_logo:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 18166949-0fc2-4e6c-a5e2-cee64b4b7624
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - corporate_blue_front_page_slider
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: 7_kNuXB7keu_fY9kzUyfFMcoag7xkK7g6fvADqnO2r8
+name: 'Front Page Slider'
+type: front_page_slider
+description: 'Front Page Slider'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

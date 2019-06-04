@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team_members.body
+    - field.field.node.team_members.field_team_member_facebook_url
+    - field.field.node.team_members.field_team_member_image
+    - field.field.node.team_members.field_team_member_linkedin_url
+    - field.field.node.team_members.field_team_member_pinterest_url
+    - field.field.node.team_members.field_team_member_twitter_url
+    - node.type.team_members
+  module:
+    - text
+    - user
+id: node.team_members.teaser
+targetEntityType: node
+bundle: team_members
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_team_member_facebook_url: true
+  field_team_member_image: true
+  field_team_member_linkedin_url: true
+  field_team_member_pinterest_url: true
+  field_team_member_twitter_url: true
+  langcode: true

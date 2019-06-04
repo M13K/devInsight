@@ -2,8 +2,10 @@ name: newcreativdevinsight
 type: theme
 core: 8.x
 description:  Custom Creative Responsive Theme for DevInsight.
-package:  newcreativdevinsight
+package:  core
 base theme: creative_responsive_theme
+libraries:
+ - newcreativdevinsight/newcreativdevinsight
 regions:
   header: 'Header'
   primary_menu: 'Primary Menu'

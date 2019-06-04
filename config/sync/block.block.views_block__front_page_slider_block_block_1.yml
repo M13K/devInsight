@@ -1,0 +1,22 @@
+uuid: 3c294934-8fdc-41f2-ae4f-c5c8c5dee018
+langcode: en
+status: true
+dependencies:
+  theme:
+    - corporate_blue
+_core:
+  default_config_hash: EhRpaMhjZKxXb358NcpFElKbS2uJUYFzCBFYkftFpw4
+id: views_block__front_page_slider_block_block_1
+theme: corporate_blue
+region: home_slider
+weight: -10
+provider: null
+plugin: 'views_block:front_page_slider_block-block_1'
+settings:
+  id: 'views_block:front_page_slider_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

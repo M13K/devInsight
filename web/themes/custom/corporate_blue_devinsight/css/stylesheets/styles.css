@@ -1,0 +1,1527 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,300,400,900);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+/* line 1, ../sass/components/_base.scss */
+body {
+  background: #FBFBFB;
+  margin-top: 0;
+}
+
+/* line 5, ../sass/components/_base.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+/* line 8, ../sass/components/_base.scss */
+.main-container {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  min-height: 350px;
+}
+@media (max-width: 1200px) {
+  /* line 8, ../sass/components/_base.scss */
+  .main-container {
+    min-height: 250px;
+  }
+}
+
+/* line 16, ../sass/components/_base.scss */
+.author {
+  margin-bottom: 20px;
+  font-size: 0.7888888em;
+  text-transform: uppercase;
+  color: #337AB7;
+}
+/* line 21, ../sass/components/_base.scss */
+.author span[rel="schema:author"]:before {
+  content: "\f007";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  /*--adjust as necessary--*/
+  color: #9A9A9A;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+/* line 32, ../sass/components/_base.scss */
+.author span[property="schema:dateCreated"]:before {
+  content: "\f017";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  /*--adjust as necessary--*/
+  color: #9A9A9A;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+
+/* line 3, ../sass/components/_typography.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6em;
+  color: #555;
+  font-weight: 300;
+}
+
+/* line 9, ../sass/components/_typography.scss */
+p {
+  font-size: 0.899999em;
+}
+
+/* line 12, ../sass/components/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #0163A7;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+/* line 22, ../sass/components/_typography.scss */
+h1 {
+  font-size: 1.5em;
+}
+
+/* line 25, ../sass/components/_typography.scss */
+h2 {
+  font-size: 1.4em;
+}
+
+/* line 28, ../sass/components/_typography.scss */
+h3 {
+  font-size: 1.3em;
+}
+
+/* line 31, ../sass/components/_typography.scss */
+h4 {
+  font-size: 1.2em;
+}
+
+/* line 34, ../sass/components/_typography.scss */
+h5 {
+  font-size: 1.1em;
+}
+
+/* line 37, ../sass/components/_typography.scss */
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover {
+  text-decoration: none;
+}
+
+/* line 44, ../sass/components/_typography.scss */
+blockquote {
+  font-weight: 500;
+  position: relative;
+}
+/* line 47, ../sass/components/_typography.scss */
+blockquote a {
+  font-style: italic;
+  text-align: right;
+  display: inline-block;
+}
+/* line 52, ../sass/components/_typography.scss */
+blockquote:after, blockquote:before {
+  content: '"';
+  font-family: 'Roboto', sans-serif;
+  color: #0163A7;
+  font-size: 2em;
+  position: absolute;
+}
+/* line 60, ../sass/components/_typography.scss */
+blockquote:before {
+  top: -10px;
+  left: 2px;
+}
+/* line 64, ../sass/components/_typography.scss */
+blockquote:after {
+  bottom: 27px;
+  right: 2px;
+}
+
+/* line 70, ../sass/components/_typography.scss */
+.path-frontpage .btn {
+  background-color: transparent;
+  border: 3px solid #13B2FF;
+  color: #13B2FF;
+  padding: 8px 32px;
+  font-weight: bold;
+  width: 250px;
+}
+/* line 77, ../sass/components/_typography.scss */
+.path-frontpage .btn:hover {
+  border-color: #1A3C58;
+  color: #1A3C58;
+}
+
+/* line 1, ../sass/components/uielements.scss */
+a {
+  -webkit-transition: all .5s;
+  /* Safari */
+  transition: all .5s;
+}
+
+/* line 6, ../sass/components/uielements.scss */
+ul.links {
+  margin-top: 20px;
+}
+/* line 8, ../sass/components/uielements.scss */
+ul.links a {
+  background: #337AB7;
+  padding: 0.5em;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.888889em;
+  border-radius: 3px;
+  text-decoration: none;
+}
+/* line 16, ../sass/components/uielements.scss */
+ul.links a:hover {
+  background: #255884;
+}
+/* line 20, ../sass/components/uielements.scss */
+ul.links li {
+  position: relative;
+}
+/* line 23, ../sass/components/uielements.scss */
+ul.links li.node-readmore a {
+  padding-left: 22px;
+}
+/* line 25, ../sass/components/uielements.scss */
+ul.links li.node-readmore a:before {
+  content: "\f054 \f054";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 0.5em;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  /*--adjust as necessary--*/
+  color: #efeefe;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  margin-right: 0.5em;
+}
+/* line 44, ../sass/components/uielements.scss */
+ul.links li.comment-add a {
+  padding-left: 30px;
+}
+/* line 46, ../sass/components/uielements.scss */
+ul.links li.comment-add a:before {
+  content: "\f075";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  /*--adjust as necessary--*/
+  color: #efeefe;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  margin-right: 0.5em;
+}
+/* line 63, ../sass/components/uielements.scss */
+ul.links li.comment-forbidden {
+  font-size: 0.8888888em;
+}
+/* line 65, ../sass/components/uielements.scss */
+ul.links li.comment-forbidden a {
+  background: transparent;
+  color: #337AB7;
+}
+/* line 68, ../sass/components/uielements.scss */
+ul.links li.comment-forbidden a:hover {
+  background: transparent;
+  color: #255884;
+}
+
+/* line 1, ../sass/components/_media.scss */
+figure {
+  background: #E8E8E8;
+}
+/* line 3, ../sass/components/_media.scss */
+figure img {
+  margin: 0 auto;
+  display: block;
+}
+/* line 7, ../sass/components/_media.scss */
+figure figcaption {
+  text-align: center;
+  background: #0163A7;
+  color: #fff;
+  padding: 12px;
+  font-size: 0.9em;
+}
+
+/* line 1, ../sass/components/_forms.scss */
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="number"] {
+  border: 0;
+  border: 1px solid #D8D8D8;
+  padding: 0.4555555em;
+  color: #777;
+  line-height: 21px;
+  font-size: 0.9em;
+  border-radius: 0;
+}
+
+/* line 16, ../sass/components/_forms.scss */
+button[type="button"],
+button[type="submit"],
+button[type="reset"],
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0;
+  padding: 0.5em;
+  color: #fff;
+  font-weight: 400;
+  background: #0163A7;
+  margin-right: 0.4em;
+}
+
+/* line 29, ../sass/components/_forms.scss */
+input[type="color"] {
+  width: 28px;
+  height: 28px;
+}
+
+/* line 33, ../sass/components/_forms.scss */
+input[type="radio"] {
+  display: inline-block;
+}
+
+/* line 36, ../sass/components/_forms.scss */
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime"],
+input[type="datetime-local"] {
+  min-width: 33%;
+  border: 0;
+  border: 1px solid #D8D8D8;
+  padding: 0.4555555em;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* line 48, ../sass/components/_forms.scss */
+button[type="button"],
+button[type="submit"],
+button[type="reset"] {
+  margin-right: 0.1em;
+}
+
+/* line 53, ../sass/components/_forms.scss */
+select,
+textarea {
+  font-size: 0.9em;
+  padding: 0.4555555em;
+  color: #777;
+  line-height: 21px;
+  border: 1px solid #D8D8D8;
+  background: #fff;
+  min-width: 33%;
+  max-height: 100px;
+}
+
+/* line 64, ../sass/components/_forms.scss */
+label {
+  font-weight: 400;
+  font-size: 0.8999999em;
+  color: #777;
+  margin-bottom: 7px;
+}
+
+/* line 70, ../sass/components/_forms.scss */
+legend {
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+}
+
+/* line 78, ../sass/components/_forms.scss */
+form fieldset p label {
+  width: 20%;
+}
+/* line 81, ../sass/components/_forms.scss */
+form fieldset p input[type="text"],
+form fieldset p input[type="password"],
+form fieldset p input[type="url"],
+form fieldset p input[type="email"],
+form fieldset p input[type="tel"],
+form fieldset p input[type="search"],
+form fieldset p input[type="number"] {
+  width: 79%;
+}
+/* line 92, ../sass/components/_forms.scss */
+form a {
+  font-size: 0.889999em;
+  border: 1px solid red;
+}
+
+/* line 2, ../sass/components/_view.scss */
+.views-row .author {
+  margin-bottom: 20px;
+  font-size: 0.7888888em;
+  text-transform: uppercase;
+  color: #337AB7;
+}
+/* line 7, ../sass/components/_view.scss */
+.views-row .author span[rel="schema:author"]:before {
+  content: "\f007";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  /*--adjust as necessary--*/
+  color: #9A9A9A;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+/* line 18, ../sass/components/_view.scss */
+.views-row .author span[property="schema:dateCreated"]:before {
+  content: "\f017";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  /*--adjust as necessary--*/
+  color: #9A9A9A;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+
+/* line 31, ../sass/components/_view.scss */
+.views-field-title {
+  font-weight: 500;
+  font-size: 0.99999em;
+}
+
+/* line 35, ../sass/components/_view.scss */
+.views-field-changed {
+  font-weight: 100;
+  color: #999;
+  font-size: 0.799999em;
+}
+
+/* line 1, ../sass/components/_header.scss */
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+/* line 6, ../sass/components/_header.scss */
+.navbar-header button {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  /* line 12, ../sass/components/_header.scss */
+  header.navbar .navbar-collapse .logo {
+    float: none;
+  }
+  /* line 15, ../sass/components/_header.scss */
+  header.navbar .navbar-collapse ul.menu {
+    float: none;
+    clear: both;
+  }
+  /* line 18, ../sass/components/_header.scss */
+  header.navbar .navbar-collapse ul.menu li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  /* line 22, ../sass/components/_header.scss */
+  header.navbar .navbar-collapse ul.menu li a {
+    border-radius: 0;
+  }
+  /* line 25, ../sass/components/_header.scss */
+  header.navbar .navbar-collapse ul.menu li .dropdown-menu {
+    position: relative;
+    border-radius: 0;
+  }
+}
+
+/* line 34, ../sass/components/_header.scss */
+.navbar-btn.logo {
+  margin-left: 15px;
+}
+
+/* line 37, ../sass/components/_header.scss */
+.header-strech {
+  background: #fff;
+  padding: 0px;
+  border-bottom: 1px solid #F3F3F3;
+}
+/* line 41, ../sass/components/_header.scss */
+.header-strech .navbar-nav {
+  float: right;
+}
+/* line 43, ../sass/components/_header.scss */
+.header-strech .navbar-nav > li {
+  margin-right: 5px;
+}
+/* line 45, ../sass/components/_header.scss */
+.header-strech .navbar-nav > li:last-child {
+  margin-right: 0;
+}
+/* line 48, ../sass/components/_header.scss */
+.header-strech .navbar-nav > li a {
+  font-size: 0.799999em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #337AB7;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* line 58, ../sass/components/_header.scss */
+.header-strech .navbar-nav > li:hover > a {
+  background: #337AB7;
+  color: #fff;
+  border-radius: 4px;
+}
+/* line 65, ../sass/components/_header.scss */
+.header-strech .header-search {
+  position: relative;
+}
+/* line 67, ../sass/components/_header.scss */
+.header-strech .header-search .input-group {
+  width: 98%;
+}
+/* line 70, ../sass/components/_header.scss */
+.header-strech .header-search input[type="search"],
+.header-strech .header-search button[type="submit"] {
+  border-radius: 20em;
+  border-right: 0;
+  box-shadow: none;
+}
+/* line 75, ../sass/components/_header.scss */
+.header-strech .header-search input[type="search"]:focus,
+.header-strech .header-search button[type="submit"]:focus {
+  border-color: #D8D8D8;
+}
+/* line 79, ../sass/components/_header.scss */
+.header-strech .header-search input[type="search"] {
+  text-indent: 8px;
+  font-size: 0.8em;
+}
+/* line 83, ../sass/components/_header.scss */
+.header-strech .header-search button[type="submit"] {
+  width: 30px;
+  background: #DCDCDC;
+  background: transparent;
+  border: transparent;
+  height: 34px;
+  position: absolute;
+  right: 4px;
+  top: 0px;
+  border-radius: 25em;
+}
+/* line 94, ../sass/components/_header.scss */
+.header-strech .header-search button[type="submit"] .glyphicon:before {
+  color: #DEDEDE;
+}
+/* line 98, ../sass/components/_header.scss */
+.header-strech .header-search button[type="submit"]:focus {
+  border-color: transparent;
+}
+/* line 103, ../sass/components/_header.scss */
+.header-strech .header-search button[type="submit"]:hover .glyphicon:before {
+  color: #337ab7;
+}
+/* line 109, ../sass/components/_header.scss */
+.header-strech .header-search h2 {
+  display: none;
+}
+/* line 113, ../sass/components/_header.scss */
+.header-strech .custom-header-block {
+  margin-top: 15px;
+}
+/* line 116, ../sass/components/_header.scss */
+.header-strech header {
+  margin-bottom: 0;
+}
+/* line 123, ../sass/components/_header.scss */
+.header-strech .header-subnavigation .region-sub-navigation ul li a {
+  position: relative;
+  font-size: 0.9em;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #8C8C8C;
+}
+/* line 129, ../sass/components/_header.scss */
+.header-strech .header-subnavigation .region-sub-navigation ul li a:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 0.5em;
+  position: absolute;
+  top: 13px;
+  left: 0px;
+  color: #8C8C8C;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  margin-right: 0.5em;
+}
+/* line 144, ../sass/components/_header.scss */
+.header-strech .header-subnavigation .region-sub-navigation ul li a:hover {
+  background: transparent;
+  color: #337AB7;
+}
+/* line 148, ../sass/components/_header.scss */
+.header-strech .header-subnavigation .region-sub-navigation ul li a:focus {
+  background: transparent;
+  box-shadow: 0;
+  outline: 0;
+  color: #337AB7;
+}
+/* line 155, ../sass/components/_header.scss */
+.header-strech .header-subnavigation .region-sub-navigation ul li:hover {
+  background: transparent;
+}
+/* line 157, ../sass/components/_header.scss */
+.header-strech .header-subnavigation .region-sub-navigation ul li:hover > a {
+  background: transparent;
+}
+
+/* line 168, ../sass/components/_header.scss */
+.header-strech .navbar ul {
+  float: right;
+  margin-top: 8px;
+}
+/* line 171, ../sass/components/_header.scss */
+.header-strech .navbar ul li {
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+}
+/* line 175, ../sass/components/_header.scss */
+.header-strech .navbar ul li:last-child {
+  margin-right: 0;
+}
+/* line 178, ../sass/components/_header.scss */
+.header-strech .navbar ul li a {
+  font-size: 0.799999em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #337AB7;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* line 187, ../sass/components/_header.scss */
+.header-strech .navbar ul li a:focus, .header-strech .navbar ul li a:active {
+  background: #337AB7;
+  color: #fff;
+  border-radius: 4px;
+}
+/* line 194, ../sass/components/_header.scss */
+.header-strech .navbar ul li:hover > a {
+  background: #337AB7;
+  color: #fff;
+  border-radius: 4px;
+}
+/* line 199, ../sass/components/_header.scss */
+.header-strech .navbar ul li > ul {
+  border-top: 2px solid #337AB7;
+  border-bottom: 2px solid #337AB7;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 204, ../sass/components/_header.scss */
+.header-strech .navbar ul li > ul li {
+  border-radius: 0;
+  display: block;
+  width: 100%;
+}
+/* line 208, ../sass/components/_header.scss */
+.header-strech .navbar ul li > ul li a {
+  border-radius: 0;
+}
+/* line 210, ../sass/components/_header.scss */
+.header-strech .navbar ul li > ul li a:hover {
+  color: white;
+  border-radius: 0;
+  background: #3386CF;
+}
+
+/* line 222, ../sass/components/_header.scss */
+.top-toolbar {
+  background: #337AB7;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  color: #fff;
+}
+/* line 229, ../sass/components/_header.scss */
+.top-toolbar .social-sharing-header h2 {
+  display: none;
+}
+/* line 232, ../sass/components/_header.scss */
+.top-toolbar .social-sharing-header ul {
+  margin-top: 7px;
+  float: right;
+  list-style: none;
+  margin-bottom: 0;
+}
+/* line 237, ../sass/components/_header.scss */
+.top-toolbar .social-sharing-header ul li {
+  font-size: 10px;
+  display: inline-block;
+  margin-right: 4px;
+}
+/* line 241, ../sass/components/_header.scss */
+.top-toolbar .social-sharing-header ul li a {
+  color: #1A3C58;
+}
+/* line 243, ../sass/components/_header.scss */
+.top-toolbar .social-sharing-header ul li a i {
+  font-size: 1.788888em;
+}
+/* line 246, ../sass/components/_header.scss */
+.top-toolbar .social-sharing-header ul li a:hover {
+  color: black;
+}
+/* line 254, ../sass/components/_header.scss */
+.top-toolbar .user-navigation-header h2 {
+  display: none;
+}
+/* line 257, ../sass/components/_header.scss */
+.top-toolbar .user-navigation-header ul.navbar-nav {
+  float: left !important;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+/* line 263, ../sass/components/_header.scss */
+.top-toolbar .user-navigation-header ul.navbar-nav li {
+  display: inline-block;
+}
+/* line 265, ../sass/components/_header.scss */
+.top-toolbar .user-navigation-header ul.navbar-nav li a {
+  color: #1A3C58;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+/* line 271, ../sass/components/_header.scss */
+.top-toolbar .user-navigation-header ul.navbar-nav li a:hover, .top-toolbar .user-navigation-header ul.navbar-nav li a:active {
+  color: #000;
+}
+
+/* line 1, ../sass/components/_nav.scss */
+.navbar-default {
+  border: 0;
+  background-color: transparent;
+}
+
+/* line 7, ../sass/components/_nav.scss */
+.header-subnavigation li {
+  display: inline-block;
+  font-size: 0.8889999em;
+  text-align: right;
+  float: right;
+}
+/* line 14, ../sass/components/_nav.scss */
+.header-subnavigation li a:hover {
+  color: red;
+}
+
+/* line 22, ../sass/components/_nav.scss */
+.ipad header.navbar .navbar-collapse ul.menu {
+  float: right;
+}
+/* line 25, ../sass/components/_nav.scss */
+.ipad header.navbar .navbar-collapse ul.menu li {
+  display: inline-block;
+  width: inherit;
+}
+
+/* line 3, ../sass/components/_sidebar.scss */
+aside section:first-child h1,
+aside section:first-child h2,
+aside section:first-child h,
+aside section:first-child h4,
+aside section:first-child h5 {
+  margin-top: 0px;
+}
+/* line 11, ../sass/components/_sidebar.scss */
+aside ul {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+/* line 15, ../sass/components/_sidebar.scss */
+aside ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+/* line 19, ../sass/components/_sidebar.scss */
+aside ul li a {
+  font-size: 0.888889em;
+}
+/* line 24, ../sass/components/_sidebar.scss */
+aside h2 {
+  display: block;
+}
+/* line 28, ../sass/components/_sidebar.scss */
+aside ul.menu li {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+/* line 32, ../sass/components/_sidebar.scss */
+aside ul.menu li a {
+  border-radius: 0 !important;
+  background: #F9F9F9;
+  border-bottom: 1px solid #DCE1E6;
+}
+/* line 39, ../sass/components/_sidebar.scss */
+aside nav {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  /* line 41, ../sass/components/_sidebar.scss */
+  aside nav ul.nav {
+    float: none !important;
+    margin: 0;
+  }
+}
+/* line 48, ../sass/components/_sidebar.scss */
+aside nav ul {
+  margin-bottom: 10px !important;
+}
+
+/* line 1, ../sass/components/footer.scss */
+.footer-container {
+  background: #0B1B29;
+  color: #62717D;
+  font-size: 0.988888em;
+}
+/* line 5, ../sass/components/footer.scss */
+.footer-container p {
+  color: #A9BED0;
+}
+/* line 8, ../sass/components/footer.scss */
+.footer-container footer {
+  border-top: 0;
+  margin-top: 0;
+}
+/* line 12, ../sass/components/footer.scss */
+.footer-container h2 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  color: #81A1BB;
+  font-weight: 300;
+}
+@media (max-width: 992px) {
+  /* line 18, ../sass/components/footer.scss */
+  .footer-container ul.menu {
+    background: #052738;
+  }
+}
+/* line 23, ../sass/components/footer.scss */
+.footer-container ul.menu li a {
+  color: #A9BED0;
+  text-transform: capitalize;
+  font-size: 0.9888888em;
+}
+@media (max-width: 992px) {
+  /* line 23, ../sass/components/footer.scss */
+  .footer-container ul.menu li a {
+    border-left: 4px solid #13B2FF;
+  }
+}
+/* line 30, ../sass/components/footer.scss */
+.footer-container ul.menu li a:hover {
+  background: none;
+  color: #337AB7;
+}
+@media (max-width: 992px) {
+  /* line 30, ../sass/components/footer.scss */
+  .footer-container ul.menu li a:hover {
+    background: #13B2FF;
+    color: #fff;
+    border-left: 4px solid #0A415D;
+  }
+}
+/* line 39, ../sass/components/footer.scss */
+.footer-container ul.menu li a:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 0.5em;
+  position: absolute;
+  top: 15px;
+  left: -1px;
+  color: #8C8C8C;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  margin-right: 0.5em;
+}
+@media (max-width: 992px) {
+  /* line 39, ../sass/components/footer.scss */
+  .footer-container ul.menu li a:before {
+    content: '';
+  }
+}
+/* line 57, ../sass/components/footer.scss */
+.footer-container ul.menu li a:focus {
+  background: transparent;
+}
+/* line 63, ../sass/components/footer.scss */
+.footer-container .region-footer {
+  margin-top: 20px;
+}
+/* line 66, ../sass/components/footer.scss */
+.footer-container a {
+  color: #4196E2;
+}
+/* line 70, ../sass/components/footer.scss */
+.footer-container .footer_copy p {
+  font-size: 0.899999em;
+}
+/* line 72, ../sass/components/footer.scss */
+.footer-container .footer_copy p a {
+  font-size: 0.899999em;
+}
+/* line 76, ../sass/components/footer.scss */
+.footer-container .footer_copy .zyx_copy {
+  margin-top: 20px;
+}
+/* line 80, ../sass/components/footer.scss */
+.footer-container .contact {
+  padding-left: 0;
+  color: #A9BED0;
+}
+/* line 83, ../sass/components/footer.scss */
+.footer-container .contact li {
+  list-style: none;
+  margin-bottom: 10px;
+  line-height: 23px;
+}
+/* line 90, ../sass/components/footer.scss */
+.footer-container .social-sharing-footer ul {
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+/* line 94, ../sass/components/footer.scss */
+.footer-container .social-sharing-footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+/* line 97, ../sass/components/footer.scss */
+.footer-container .social-sharing-footer ul li a {
+  color: #2A6392;
+}
+/* line 99, ../sass/components/footer.scss */
+.footer-container .social-sharing-footer ul li a:hover {
+  color: black;
+}
+
+/* line 2, ../sass/components/front.scss */
+.path-frontpage h4,
+.path-frontpage h3 {
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #666;
+}
+/* line 9, ../sass/components/front.scss */
+.path-frontpage h1 {
+  margin-top: 47px;
+}
+
+/* line 14, ../sass/components/front.scss */
+.home-main-content .views-row {
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 17, ../sass/components/front.scss */
+.home-main-content .views-row:nth-child(3n+1) {
+  clear: left;
+}
+/* line 20, ../sass/components/front.scss */
+.home-main-content .views-row h2 {
+  margin-bottom: 10px;
+}
+
+/* line 25, ../sass/components/front.scss */
+.unslider {
+  position: relative;
+}
+/* line 27, ../sass/components/front.scss */
+.unslider .unslider-arrow {
+  top: 50%;
+  background: rgba(25, 34, 41, 0.55);
+  width: 46px;
+  height: 41px;
+  overflow: hidden;
+  text-indent: -999px;
+  border-radius: 4px;
+}
+/* line 36, ../sass/components/front.scss */
+.unslider .next:after {
+  content: "\f105";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: rgba(242, 247, 250, 0.56);
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  text-indent: 0 !important;
+  text-decoration: none;
+}
+/* line 51, ../sass/components/front.scss */
+.unslider .prev:after {
+  content: "\f105";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: rgba(242, 247, 250, 0.56);
+  font-size: 18px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  text-indent: 0 !important;
+  text-decoration: none;
+  transform: rotate(180deg);
+}
+/* line 67, ../sass/components/front.scss */
+.unslider li {
+  position: relative;
+}
+/* line 69, ../sass/components/front.scss */
+.unslider li .caption-holder {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+}
+/* line 74, ../sass/components/front.scss */
+.unslider li .caption-holder h2 {
+  color: #fff;
+  font-size: 4em;
+  text-shadow: 1px 1px 3px rgba(33, 53, 77, 0.48);
+}
+@media (max-width: 768px) {
+  /* line 74, ../sass/components/front.scss */
+  .unslider li .caption-holder h2 {
+    font-size: 1.8em;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 74, ../sass/components/front.scss */
+  .unslider li .caption-holder h2 {
+    font-size: 1.6em;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/* line 89, ../sass/components/front.scss */
+.unslider li .caption-holder p {
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px rgba(33, 53, 77, 0.48);
+  font-weight: 300;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  /* line 89, ../sass/components/front.scss */
+  .unslider li .caption-holder p {
+    font-size: 1.8em;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 89, ../sass/components/front.scss */
+  .unslider li .caption-holder p {
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/* line 106, ../sass/components/front.scss */
+.unslider li img {
+  webkit-box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+@media (max-width: 768px) {
+  /* line 106, ../sass/components/front.scss */
+  .unslider li img {
+    height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 106, ../sass/components/front.scss */
+  .unslider li img {
+    height: 300px;
+  }
+}
+/* line 120, ../sass/components/front.scss */
+.unslider .unslider-nav {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 128, ../sass/components/front.scss */
+.unslider .unslider-nav ol li {
+  padding: 6px;
+  background: #E8E8E8;
+  border: 0;
+  border-radius: 25em;
+}
+
+/* line 137, ../sass/components/front.scss */
+.ourteamhome {
+  margin-bottom: 25px;
+  display: none;
+}
+/* line 139, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 143, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder h1 {
+  margin-top: 20px;
+}
+/* line 146, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder .team-member-desc {
+  min-height: 75px;
+}
+/* line 149, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder ul.social-icons-front {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+/* line 154, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder ul.social-icons-front li {
+  display: inline-block;
+}
+/* line 158, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder img {
+  padding-top: 20px;
+}
+/* line 161, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder:hover {
+  background: #F1F1F1;
+  margin-bottom: 17px;
+  border-bottom: 3px solid #0163A7;
+}
+/* line 165, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder:hover i {
+  color: #0163A7;
+}
+/* line 167, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder:hover i:hover {
+  color: #999;
+}
+/* line 171, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder:hover::before {
+  content: "\f030";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: rgba(255, 255, 255, 0.71);
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  top: 86px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 2.8em;
+  text-align: center;
+  border-bottom: 0;
+  text-decoration: none;
+}
+/* line 191, ../sass/components/front.scss */
+.ourteamhome .team-individual-holder:hover::before:hover {
+  display: none;
+}
+/* line 199, ../sass/components/front.scss */
+.ourteamhome > a::before {
+  -webkit-transition: all 2s;
+  /* Safari */
+  transition: all 2s;
+}
+/* line 204, ../sass/components/front.scss */
+.ourteamhome > a i {
+  color: #999;
+}
+/* line 207, ../sass/components/front.scss */
+.ourteamhome > a h1 {
+  color: #13B2FF;
+  margin-top: 40px;
+  font-size: 2em;
+}
+/* line 212, ../sass/components/front.scss */
+.ourteamhome > a .btn {
+  width: 250px;
+}
+/* line 215, ../sass/components/front.scss */
+.ourteamhome > a p {
+  width: 80%;
+}
+
+/* line 221, ../sass/components/front.scss */
+.home-gallery.no-gutter img {
+  -webkit-transition: all 2s;
+  /* Safari */
+  transition: all 2s;
+}
+/* line 226, ../sass/components/front.scss */
+.home-gallery.no-gutter a:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 231, ../sass/components/front.scss */
+.home-gallery.no-gutter a {
+  overflow: hidden;
+}
+
+/* line 235, ../sass/components/front.scss */
+.home-gallery.no-gutter .col-md-3 {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+}
+
+/* line 240, ../sass/components/front.scss */
+.showcase_home {
+  padding-bottom: 36px;
+  background: url("../../images/showcasebg.jpg") center center;
+  background-attachment: fixed;
+  background-size: 100%;
+  position: relative;
+}
+/* line 246, ../sass/components/front.scss */
+.showcase_home:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* line 256, ../sass/components/front.scss */
+.showcase_home i {
+  display: block;
+  margin: 5px auto;
+  color: #fff;
+  background: rgba(51, 122, 183, 0.8);
+  border-radius: 25em;
+  width: 125px;
+  height: 125px;
+  line-height: 124px;
+  box-shadow: 0px 0px 5px rgba(51, 122, 183, 0.8);
+  font-size: 3em;
+}
+/* line 268, ../sass/components/front.scss */
+.showcase_home h1 {
+  color: #13B2FF;
+  font-size: 2em;
+}
+/* line 272, ../sass/components/front.scss */
+.showcase_home h3 {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: normal;
+}
+/* line 277, ../sass/components/front.scss */
+.showcase_home .col-md-4 h1 {
+  color: #fff;
+  font-size: 2em;
+}
+
+/* line 282, ../sass/components/front.scss */
+.our-clients-container {
+  background: url("../../images/showcasebg.jpg") center center;
+  padding-bottom: 54px;
+  background-size: 100%;
+  position: relative;
+}
+/* line 287, ../sass/components/front.scss */
+.our-clients-container:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* line 297, ../sass/components/front.scss */
+.our-clients-container h1 {
+  text-align: center;
+  color: #13B2FF;
+  font-size: 2em;
+}
+/* line 302, ../sass/components/front.scss */
+.our-clients-container h4 {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: normal;
+}
+/* line 309, ../sass/components/front.scss */
+.our-clients-container .our-clients img {
+  height: 80px;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+/* line 318, ../sass/components/front.scss */
+.welcome-home h1 {
+  color: #13B2FF;
+  margin-top: 40px;
+  font-size: 2em;
+}
+/* line 323, ../sass/components/front.scss */
+.welcome-home h4 {
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #666;
+}
+/* line 330, ../sass/components/front.scss */
+.welcome-home .heading-welcome-holder .heading-welcome {
+  padding: 7% 0;
+}
+@media (max-width: 768px) {
+  /* line 330, ../sass/components/front.scss */
+  .welcome-home .heading-welcome-holder .heading-welcome {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 337, ../sass/components/front.scss */
+  .welcome-home .heading-welcome-holder p,
+  .welcome-home .heading-welcome-holder .btn,
+  .welcome-home .heading-welcome-holder h5 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  /* line 345, ../sass/components/front.scss */
+  .welcome-home .heading-welcome-holder .btn {
+    margin-bottom: 47px;
+    width: 200px;
+  }
+}
+/* line 351, ../sass/components/front.scss */
+.welcome-home img {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  /* line 351, ../sass/components/front.scss */
+  .welcome-home img {
+    width: 100%;
+  }
+}
+
+/* line 359, ../sass/components/front.scss */
+.header-search {
+  clear: right;
+}
+/* line 361, ../sass/components/front.scss */
+.header-search form {
+  clear: right;
+}
+
+/* Slider */
+/* line 3, ../sass/components/slick/_slick.scss */
+.slick-slider {
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 18, ../sass/components/slick/_slick.scss */
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* line 25, ../sass/components/slick/_slick.scss */
+.slick-list:focus {
+  outline: none;
+}
+/* line 29, ../sass/components/slick/_slick.scss */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 34, ../sass/components/slick/_slick.scss */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 43, ../sass/components/slick/_slick.scss */
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+/* line 49, ../sass/components/slick/_slick.scss */
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+/* line 55, ../sass/components/slick/_slick.scss */
+.slick-track:after {
+  clear: both;
+}
+/* line 59, ../sass/components/slick/_slick.scss */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 63, ../sass/components/slick/_slick.scss */
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+/* line 67, ../sass/components/slick/_slick.scss */
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+/* line 70, ../sass/components/slick/_slick.scss */
+.slick-slide img {
+  display: block;
+}
+/* line 73, ../sass/components/slick/_slick.scss */
+.slick-slide.slick-loading img {
+  display: none;
+}
+/* line 79, ../sass/components/slick/_slick.scss */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+/* line 83, ../sass/components/slick/_slick.scss */
+.slick-initialized .slick-slide {
+  display: block;
+}
+/* line 87, ../sass/components/slick/_slick.scss */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+/* line 91, ../sass/components/slick/_slick.scss */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 97, ../sass/components/slick/_slick.scss */
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* line 3, ../sass/components/_teammembers.scss */
+.path-team-members .view-team-members .team-individual-holder {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding-top: 0.5em;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 9, ../sass/components/_teammembers.scss */
+.path-team-members .view-team-members .team-individual-holder h1 {
+  margin-top: 20px;
+}
+/* line 12, ../sass/components/_teammembers.scss */
+.path-team-members .view-team-members .team-individual-holder ul {
+  display: inline-flex;
+  padding-top: 0.5em;
+  padding-left: 2.5em;
+}
+/* line 16, ../sass/components/_teammembers.scss */
+.path-team-members .view-team-members .team-individual-holder ul li {
+  padding: 0.05em;
+  list-style: none;
+}
+/* line 21, ../sass/components/_teammembers.scss */
+.path-team-members .view-team-members .team-individual-holder .team-member-desc {
+  text-align: justify;
+}
+#custom-team-members img {
+  margin: 0 auto;
+}
+.views-field-field-photo {
+  margin: 0 20px 0 0;
+}

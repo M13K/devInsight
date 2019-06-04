@@ -1,0 +1,24 @@
+uuid: fabdf8c4-ecb2-43a9-a650-1d70f6bdbcb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.front_page_slider
+  module:
+    - text
+_core:
+  default_config_hash: GVGb7Wou721VD5wNLjhWf1Dh7CqJ3EX7tpXgiaxTqVg
+id: node.front_page_slider.body
+field_name: body
+entity_type: node
+bundle: front_page_slider
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

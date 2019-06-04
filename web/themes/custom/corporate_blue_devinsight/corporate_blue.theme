@@ -1,0 +1,276 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Functions to support theming in the Corporate-Blue theme.
+ */
+
+use Drupal\node\Entity\Node;
+use Drupal\block\Entity\Block;
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter().
+ */
+function corporate_blue_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+
+  // Social Icon Link.
+  $form['corporate_blue_settings']['social_icon'] = array(
+    '#type' => 'details',
+    '#title' => t('Social Media Link'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['corporate_blue_settings']['social_icon']['show_social_icon'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Show Social Icons'),
+    '#default_value' => theme_get_setting('show_social_icon'),
+    '#description'   => t("Show/Hide social media links"),
+  );
+  $form['corporate_blue_settings']['social_icon']['facebook_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Facebook Link'),
+    '#default_value' => theme_get_setting('facebook_url'),
+  );
+  $form['corporate_blue_settings']['social_icon']['google_plus_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Google plus Link'),
+    '#default_value' => theme_get_setting('google_plus_url'),
+  );
+  $form['corporate_blue_settings']['social_icon']['twitter_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Twitter Link'),
+    '#default_value' => theme_get_setting('twitter_url'),
+  );
+  $form['corporate_blue_settings']['social_icon']['linkedin_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Linkedin Link'),
+    '#default_value' => theme_get_setting('linkedin_url'),
+  );
+  $form['corporate_blue_settings']['social_icon']['pinterest_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Pinterest Link'),
+    '#default_value' => theme_get_setting('pinterest_url'),
+  );
+  $form['corporate_blue_settings']['social_icon']['rss_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('RSS Link'),
+    '#default_value' => theme_get_setting('rss_url'),
+  );
+
+  // Social Icon Link.
+  $form['corporate_blue_settings']['showcase_social_icon'] = array(
+    '#type' => 'details',
+    '#title' => t('Showcase Social Media Links and Counts'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['corporate_blue_settings']['showcase_social_icon']['showcase_title'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Showcase Title'),
+    '#default_value' => theme_get_setting('showcase_title'),
+  );
+  $form['corporate_blue_settings']['showcase_social_icon']['showcase_description'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Showcase Description'),
+    '#default_value' => theme_get_setting('showcase_description'),
+  );
+  $form['corporate_blue_settings']['showcase_social_icon']['showcase_facebook_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Facebook Link'),
+    '#default_value' => theme_get_setting('showcase_facebook_url'),
+  );
+  $form['corporate_blue_settings']['showcase_social_icon']['showcase_facebook_count'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Facebook Count'),
+    '#default_value' => theme_get_setting('showcase_facebook_count'),
+  );
+  $form['corporate_blue_settings']['showcase_social_icon']['showcase_twitter_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Twitter Link'),
+    '#default_value' => theme_get_setting('showcase_twitter_url'),
+  );
+  $form['corporate_blue_settings']['showcase_social_icon']['showcase_twitter_count'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Twitter Count'),
+    '#default_value' => theme_get_setting('showcase_twitter_count'),
+  );
+  $form['corporate_blue_settings']['showcase_social_icon']['showcase_linkedin_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Linkedin Link'),
+    '#default_value' => theme_get_setting('showcase_linkedin_url'),
+  );
+  $form['corporate_blue_settings']['showcase_social_icon']['showcase_linkedin_count'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Linkedin Count'),
+    '#default_value' => theme_get_setting('showcase_linkedin_count'),
+  );
+
+  // Welcome message form.
+  $form['corporate_blue_settings']['welcome_message'] = array(
+    '#type' => 'details',
+    '#title' => t('Welcome Message'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['corporate_blue_settings']['welcome_message']['welcome_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Main message'),
+    '#default_value' => theme_get_setting('welcome_text'),
+  );
+  $form['corporate_blue_settings']['welcome_message']['welcome_sub_text'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Sub message'),
+    '#default_value' => theme_get_setting('welcome_sub_text'),
+  );
+  $article_list = corporate_blue_fetch_articles();
+  $form['corporate_blue_settings']['welcome_message']['article_block'] = array(
+    '#type' => 'select',
+    '#title' => t('Chose article for welcome block'),
+    '#options' => $article_list,
+    '#default_value' => theme_get_setting('article_block'),
+  );
+
+  // Contact Us.
+  $form['corporate_blue_settings']['contact_us'] = array(
+    '#type' => 'details',
+    '#title' => t('Contact Us'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['corporate_blue_settings']['contact_us']['address_house_number'] = array(
+    '#type' => 'textfield',
+    '#title' => t('House Number'),
+    '#default_value' => theme_get_setting('address_house_number'),
+  );
+  $form['corporate_blue_settings']['contact_us']['address_street'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Street'),
+    '#default_value' => theme_get_setting('address_street'),
+  );
+  $form['corporate_blue_settings']['contact_us']['address_city'] = array(
+    '#type' => 'textfield',
+    '#title' => t('City'),
+    '#default_value' => theme_get_setting('address_city'),
+  );
+  $form['corporate_blue_settings']['contact_us']['address_country'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Country'),
+    '#default_value' => theme_get_setting('address_country'),
+  );
+  $form['corporate_blue_settings']['contact_us']['address_phone'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Phone'),
+    '#default_value' => theme_get_setting('address_phone'),
+  );
+  $form['corporate_blue_settings']['contact_us']['address_email'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Email ID'),
+    '#default_value' => theme_get_setting('address_email'),
+  );
+
+  // Custom submit to save the file permanent.
+  $form['#submit'][] = 'corporate_blue_settings_form_submit';
+}
+
+/**
+ * Function to fetch all articles - title and node id for the select box.
+ */
+function corporate_blue_fetch_articles() {
+  $query = \Drupal::database()->select('node_field_data', 'nd');
+  $query->join('node__body', 'n', 'n.entity_id = nd.nid');
+  $query->fields('nd', ['title', 'nid'])
+        ->condition('nd.type', 'article');
+  $results = $query->execute()->fetchAll();
+
+  $article_array = array('0' => 'Please select');
+  foreach ($results as $article_data) {
+    $article_array[$article_data->nid] .= $article_data->title;
+  }
+  return $article_array;
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function corporate_blue_preprocess_html(&$variables) {
+  $showcase_title = theme_get_setting('showcase_title', 'corporate_blue');
+  $showcase_description = theme_get_setting('showcase_description', 'corporate_blue');
+  $showcase_twitter_url = theme_get_setting('showcase_twitter_url', 'corporate_blue');
+  $showcase_twitter_count = theme_get_setting('showcase_twitter_count', 'corporate_blue');
+  $showcase_facebook_url = theme_get_setting('showcase_facebook_url', 'corporate_blue');
+  $showcase_facebook_count = theme_get_setting('showcase_facebook_count', 'corporate_blue');
+  $showcase_linkedin_url = theme_get_setting('showcase_linkedin_url', 'corporate_blue');
+  $showcase_linkedin_count = theme_get_setting('showcase_linkedin_count', 'corporate_blue');
+  $welcome_article_id = theme_get_setting('article_block', 'corporate_blue');
+  $address_house_number = theme_get_setting('address_house_number', 'corporate_blue');
+  $address_street = theme_get_setting('address_street', 'corporate_blue');
+  $address_city = theme_get_setting('address_city', 'corporate_blue');
+  $address_country = theme_get_setting('address_country', 'corporate_blue');
+  $address_phone = theme_get_setting('address_phone', 'corporate_blue');
+  $address_email = theme_get_setting('address_email', 'corporate_blue');
+  if (!empty($address_house_number)) {
+    $variables['address_house_number'] = $address_house_number;
+  }
+  if (!empty($address_street)) {
+    $variables['address_street'] = $address_street;
+  }
+  if (!empty($address_city)) {
+    $variables['address_city'] = $address_city;
+  }
+  if (!empty($address_country)) {
+    $variables['address_country'] = $address_country;
+  }
+  if (!empty($address_phone)) {
+    $variables['address_phone'] = $address_phone;
+  }
+  if (!empty($address_email)) {
+    $variables['address_email'] = $address_email;
+  }
+  if (!empty($showcase_title)) {
+    $variables['showcase_title'] = $showcase_title;
+  }
+  if (!empty($showcase_description)) {
+    $variables['showcase_description'] = $showcase_description;
+  }
+  if (!empty($showcase_twitter_url)) {
+    $variables['showcase_twitter_url'] = $showcase_twitter_url;
+  }
+  if (!empty($showcase_twitter_count)) {
+    $variables['showcase_twitter_count'] = $showcase_twitter_count;
+  }
+  if (!empty($showcase_facebook_url)) {
+    $variables['showcase_facebook_url'] = $showcase_facebook_url;
+  }
+  if (!empty($showcase_facebook_count)) {
+    $variables['showcase_facebook_count'] = $showcase_facebook_count;
+  }
+  if (!empty($showcase_linkedin_url)) {
+    $variables['showcase_linkedin_url'] = $showcase_linkedin_url;
+  }
+  if (!empty($showcase_linkedin_count)) {
+    $variables['showcase_linkedin_count'] = $showcase_linkedin_count;
+  }
+  if (!empty($welcome_article_id)) {
+    $article_id = $welcome_article_id;
+    $node_data = Node::load($article_id);
+    if (!empty($node_data)) {
+      $variables['page']['welcome_block_article_id'] = $article_id;
+      $variables['page']['welcome_block_article_title'] = $node_data->getTitle();
+      if (!empty($node_data->body)) {
+        $variables['page']['welcome_block_article_body'] = substr(strip_tags($node_data->body->value), 0, 390);
+        $variables['page']['welcome_block_article_body_footer'] = substr(strip_tags($node_data->body->value), 0, 70);
+      }
+      if ($node_data->field_image->entity) {
+        $variables['page']['welcome_block_article_image_url'] = $node_data->field_image->entity->url();
+      }
+    }
+  }
+  // Add block in a region.
+  $block = Block::load('corporate_blue_footer');
+  $block_content = \Drupal::entityManager()->getViewBuilder('block')->view($block);
+  $variables['page']['footer'][] = $block_content;
+  // Remove powered by drupal block from header region.
+  unset($variables['page']['navigation']['corporate_blue_powered']);
+}
