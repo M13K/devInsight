@@ -1,6 +1,6 @@
 uuid: 6bc1d0c7-975d-403e-8378-c0289de506c4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - webform.webform.formumaire_d_adhesion_aux_confer

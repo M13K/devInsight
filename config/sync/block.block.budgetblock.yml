@@ -1,0 +1,20 @@
+uuid: 5170761b-9bb2-4797-972b-59673859443d
+langcode: en
+status: true
+dependencies:
+  module:
+    - dev
+  theme:
+    - newcreativdevinsight
+id: budgetblock
+theme: newcreativdevinsight
+region: sidebar_first
+weight: 0
+provider: null
+plugin: budget_block
+settings:
+  id: budget_block
+  label: 'Budget block'
+  provider: dev
+  label_display: visible
+visibility: {  }
