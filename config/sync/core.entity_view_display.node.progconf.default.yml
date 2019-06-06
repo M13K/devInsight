@@ -14,27 +14,77 @@ dependencies:
     - field.field.node.progconf.field_nombre_de_nuits
     - field.field.node.progconf.field_organisateur
     - field.field.node.progconf.field_photo
+    - image.style.photo_conf_1200x488
     - node.type.progconf
   module:
     - datetime
     - ds
+    - field_group
     - geolocation
     - image
     - text
     - user
     - webform
+third_party_settings:
+  field_group:
+    group_sous_menu_conferences:
+      children:
+        - group_description
+        - group_organisation
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        label: sous-menu-conferences
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: sous-menu-conferences
+    group_description:
+      children:
+        - field_photo
+        - field_description_conference
+        - field_datedebut
+        - field_datefin
+        - field_lieu
+        - field_hotel_recommandes
+      parent_name: group_sous_menu_conferences
+      weight: 1
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+      label: Description
+    group_organisation:
+      children:
+        - field_organisateur
+        - field_nombre_de_nuits
+        - field_budgetconf
+        - field_adhesion_conference
+        - field_adherant_
+      parent_name: group_sous_menu_conferences
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+      label: Organisation
 id: node.progconf.default
 targetEntityType: node
 bundle: progconf
 mode: default
 content:
   content_moderation_control:
-    weight: 11
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_adherant_:
-    weight: 10
+    weight: 4
     label: above
     settings:
       link: true
@@ -42,7 +92,7 @@ content:
     type: entity_reference_label
     region: content
   field_adhesion_conference:
-    weight: 9
+    weight: 3
     label: above
     settings:
       source_entity: true
@@ -50,18 +100,18 @@ content:
     type: webform_entity_reference_entity_view
     region: content
   field_budgetconf:
-    weight: 5
-    label: inline
+    type: number_decimal
+    weight: 2
+    region: content
+    label: above
     settings:
       thousand_separator: ''
       decimal_separator: .
       scale: 2
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_decimal
-    region: content
   field_datedebut:
-    weight: 2
+    weight: 4
     label: inline
     settings:
       timezone_override: ''
@@ -70,7 +120,7 @@ content:
     type: datetime_custom
     region: content
   field_datefin:
-    weight: 3
+    weight: 5
     label: inline
     settings:
       timezone_override: ''
@@ -79,14 +129,14 @@ content:
     type: datetime_custom
     region: content
   field_description_conference:
-    weight: 1
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_hotel_recommandes:
-    weight: 8
+    weight: 7
     label: above
     settings:
       link: true
@@ -94,8 +144,8 @@ content:
     type: entity_reference_label
     region: content
   field_lieu:
-    weight: 7
-    label: above
+    weight: 6
+    label: inline
     settings:
       set_marker: '1'
       title: ''
@@ -127,25 +177,29 @@ content:
     type: geolocation_map
     region: content
   field_nombre_de_nuits:
-    weight: 6
-    label: inline
-    settings: {  }
-    third_party_settings: {  }
-    type: number_unformatted
+    type: number_decimal
+    weight: 1
     region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
   field_organisateur:
-    weight: 4
-    label: hidden
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_photo:
-    weight: 0
+    weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: photo_conf_1200x488
       image_link: ''
     third_party_settings:
       ds:

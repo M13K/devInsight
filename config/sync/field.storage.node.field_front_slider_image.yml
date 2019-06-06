@@ -1,0 +1,35 @@
+uuid: 069d3dc4-38c2-4055-9205-17381c220879
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - corporate_blue_front_page_slider
+  module:
+    - file
+    - image
+    - node
+_core:
+  default_config_hash: bBIEHKJtwL9I02_z3_ud7baf7BQCwSbXLO0Orn4oSIk
+id: node.field_front_slider_image
+field_name: field_front_slider_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

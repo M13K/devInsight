@@ -1,0 +1,17 @@
+uuid: 41e184e7-5971-48d6-a8f5-36e72ebc99ed
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bEPsd_WmubVqjoYNaCJWPAT4RdYWPjk7aB0MpAGFlfw
+name: home_page_image_slider
+label: 'Home Page Image Slider'
+effects:
+  889896f5-001c-4ece-b247-ba284492675d:
+    uuid: 889896f5-001c-4ece-b247-ba284492675d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1905
+      height: 788
+      anchor: center-center

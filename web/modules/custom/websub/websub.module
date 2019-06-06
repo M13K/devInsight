@@ -24,80 +24,104 @@ function websub_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
-function websub_webform_submission_update(WebformSubmissionInterface $entity) {
-    // Si la soumission est validée, on vérifie que l'utilisateur est déja membre du programme.
-    $user_id = $entity->getOwnerId();
-     $members = $entity->getSourceEntity()->get('field_adherant_')->getValue();
-
-//   kint(['target_id' => $user_id]); die;
-
-    // Si l'adhésion est acceptée et que l'utilisateur n'est pas un membre du programme.
-    if ($entity->getData()['validation_adhesion'] == 'Accepted' && !in_array(['target_id' => $user_id], $members)) {
-        $entity->getSourceEntity()->get('field_adherant_')->setValue(
-
-                ['target_id' => $entity->getOwnerId()]
-        );
-        $entity->getSourceEntity()->save();
-    }
-    // Si l'adhésion n'est pas acceptée et que l'utilisateur est un membre du programme.
-    if ($entity->getData()['validation_adhesion'] != 'Accepted' && in_array(['target_id' => $user_id], $members)) {
-        $key = array_search(['target_id' => $user_id], $members);
-        unset($members[$key]);
-        $entity->getSourceEntity()->field_adherant_->setValue($members);
-        $entity->getSourceEntity()->save();
-    }
-}
-
-
-
 //function websub_webform_submission_update(WebformSubmissionInterface $entity) {
 //    // Si la soumission est validée, on vérifie que l'utilisateur est déja membre du programme.
-//
 //    $user_id = $entity->getOwnerId();
-////    ksm($user_id);
+//     $members = $entity->getSourceEntity()->get('field_adherant_')->getValue();
 //
-//    $members = $entity->getSourceEntity()->get('field_adherant_')->getValue();
-////    ksm($members);
-//    $budget = $entity->getSourceEntity()->get('field_budgetconf')->getValue();
-//    ksm($budget);
-////    $participant = $entity->getSourceEntity()->get('field_participants_au_programme')->getValue();
-////    ksm($participant);
+////   kint(['target_id' => $user_id]); die;
 //
-//
-//    //ksm($members);
 //    // Si l'adhésion est acceptée et que l'utilisateur n'est pas un membre du programme.
-//    if ($entity->getData()['validation_adhesion'] == 'Validee' && !in_array(['target_id' => $user_id], $members)) {
+//    if ($entity->getData()['validation_adhesion'] == 'Accepted' && !in_array(['target_id' => $user_id], $members)) {
+//        $entity->getSourceEntity()->get('field_adherant_')->setValue(
 //
-//        $members_new = $entity->getSourceEntity()->get('field_adherant_')->getValue();
-//        $new_user = ['target_id' => $user_id];
-//        $members_new[] = $new_user;
-//        $entity->getSourceEntity()->set('field_adherant_', $members_new);
-//
-//
-//        $entity->getSourceEntity()->set('field_adherents',array_merge(['target_id' => $entity->getOwnerId()]));
+//                ['target_id' => $entity->getOwnerId()]
+//        );
 //        $entity->getSourceEntity()->save();
-//        $entity->getSourceEntity()->get('field_adherant_');
 //    }
 //    // Si l'adhésion n'est pas acceptée et que l'utilisateur est un membre du programme.
-//    if ($entity->getData()['validation_adhesion'] != 'Validee' && in_array(['target_id' => $user_id],$members)) {
-//        $key = array_search(['target_id' => $user_id],$members);
+//    if ($entity->getData()['validation_adhesion'] != 'Accepted' && in_array(['target_id' => $user_id], $members)) {
+//        $key = array_search(['target_id' => $user_id], $members);
 //        unset($members[$key]);
-//        $entity->getSourceEntity()->field_username->setValue($members);
+//        $entity->getSourceEntity()->field_adherant_->setValue($members);
 //        $entity->getSourceEntity()->save();
 //    }
 //}
 
+function websub_webform_submission_update(WebformSubmissionInterface $entity) {
+
+    $user_id = $entity->getOwnerId();
+
+    $members = $entity->getSourceEntity()->get('field_adherant_');
+//    ksm($members);
+//    $participant = $entity->getSourceEntity()->get('field_participants_au_programme')->getValue();
+    //ksm($participant);
+    $members2 = [];
+    foreach($members->getValue() as $member) {
+        $members2[] = $member['target_id'];
+    }
+
+    $members_new=[];
+    $members_old=[];
+    //ksm($members);
+    // Si l'adhésion est acceptée et que l'utilisateur n'est pas un membre du programme.
+    /*if ($entity->getData()['membership'] == 'Accepted' && !in_array(['target_id' => $user_id], [$members2<='field_username'])) {*/
+    if ($entity->getData()['validation_adhesion'] == 'Accepted' && !in_array($user_id,$members2)) {
+
+        $members_new = $entity->getSourceEntity()->get('field_adherant_')->getValue();
+        $new_user = ['target_id' => $user_id];
+        $members_new[] = $new_user;
+        $entity->getSourceEntity()->set('field_adherant_', $members_new);
+
+        $entity->getSourceEntity()->save();
+        //ksm($entity->getSourceEntity()->get('field_username'));
+    }
+    // Si l'adhésion n'est pas acceptée et que l'utilisateur est un membre du programme.
+
+    /*if ($entity->getData()['membership'] != 'Accepted' && in_array(['target_id' => $user_id],[$members2<='field_username'])) {*/
+    if ($entity->getData()['validation_adhesion'] != 'Accepted' && in_array($user_id,$members2)) {
+        $members_old = $entity->getSourceEntity()->get('field_adherant_')->getValue();
+        //$key = array_search(['target_id' => $user_id],[$members2<='field_username']);
+        $key = array_search($user_id, $members2);
+        //$new_user = ['target_id' => $user_id];
+        //$members_new[] = $new_user;
+        //ksm($members_new);
+        ksm($entity->getSourceEntity()->get('field_adherant_'));
+        ksm($members_old);
+        unset($members_old[$key]);
+        $entity->getSourceEntity()->set('field_adherant_',$members_old);
+        $entity->getSourceEntity()->save();
+        ksm($entity->getSourceEntity()->get('field_adherant_'));
+    }
+
+}
 
 /**
  * Implements hook_ENTITY_TYPE_delete().
  */
 function websub_webform_submission_delete(WebformSubmissionInterface $entity){
     $user_id = $entity->getOwnerId();
-    $members = $entity -> getSourceEntity()->get('field_members')->getValue();
-    if(in_array(['target_id'=> $user_id],$members)){
-        $key= array_search(['target_id'=>$user_id],$members);
+    $members = $entity -> getSourceEntity()->get('field_adherant_')->getValue()[0]['target_id'];
+    $members_new=[];
+    if(in_array(['target_id'=> $user_id],$members_new)){
+        $key= array_search(['target_id'=>$user_id],$members_new);
         unset($members[$key]);
-        $entity->getSourceEntity()->field_members->setValue($members);
+        $entity->getSourceEntity()->get('field_adherant_')->setValue($members_new);
         $entity->getSourceEntity()->save();
     }
+
+
+
+///**
+// * Implements hook_ENTITY_TYPE_delete().
+// */
+//function websub_webform_submission_delete(WebformSubmissionInterface $entity){
+//    $user_id = $entity->getOwnerId();
+//    $members = $entity -> getSourceEntity()->get('field_members')->getValue();
+//    if(in_array(['target_id'=> $user_id],$members)){
+//        $key= array_search(['target_id'=>$user_id],$members);
+//        unset($members[$key]);
+//        $entity->getSourceEntity()->field_members->setValue($members);
+//        $entity->getSourceEntity()->save();
+//    }
 }

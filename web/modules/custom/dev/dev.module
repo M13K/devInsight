@@ -22,13 +22,13 @@ function dev_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_theme().
  */
-function dev_theme() {
-  return [
-    'dev' => [
-      'render element' => 'children',
-    ],
-  ];
-}
+//function dev_theme() {
+//  return [
+//    'dev' => [
+//      'render element' => 'children',
+//    ],
+//  ];
+//}
 
 function dev_user_login(UserInterface $account){
     \Drupal::messenger()->addMessage(t('Bienvenue %name',

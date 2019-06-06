@@ -10,7 +10,6 @@ weight: -9
 is_admin: false
 permissions:
   - 'access comments'
-  - 'access shortcuts'
   - 'access site-wide contact form'
   - 'post comments'
   - 'search content'
