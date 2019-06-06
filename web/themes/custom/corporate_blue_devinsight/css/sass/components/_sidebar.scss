@@ -1,0 +1,52 @@
+aside {
+  section:first-child {
+    h1,
+    h2,
+    h,
+    h4,
+    h5 {
+      margin-top: 0px;
+    }
+  }
+  ul {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    li {
+      margin-bottom: 10px;
+      list-style: none;
+      span {}
+      a {
+        font-size: 0.888889em;
+      }
+    }
+  }
+  h2 {
+    display: block;
+  }
+  ul.menu {
+    li {
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+      a {
+        border-radius: 0 !important;
+        background: #F9F9F9;
+        border-bottom: 1px solid #DCE1E6;
+      }
+    }
+  }
+  nav {
+    margin-bottom: 20px;
+    ul.nav {
+      @include breakpoint(sm) {
+      float: none !important;
+        margin: 0;
+    }
+    }
+    
+    ul {
+      margin-bottom: 10px !important;
+    }
+  }
+}

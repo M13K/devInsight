@@ -1,0 +1,21 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+
+un-slider:
+  css:
+    theme:
+      css/sass/components/unslider/unslider.css: {}
+      css/sass/components/unslider/unslider-dots.css: {}
+  js:
+    js/unslider-min.js: {}
+    js/script.js: {}
+
+slick-slider:
+  js:
+    http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js: { type: external, minified: true }
+
+browser-selector:
+  js:
+    js/jquery.platformselector.js: {}

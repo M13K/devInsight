@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: showcase_images
+label: 'Showcase Images'
+effects:
+  5ee842f7-38bd-461d-a4a7-826b79d95325:
+    uuid: 5ee842f7-38bd-461d-a4a7-826b79d95325
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 338
+      height: 222

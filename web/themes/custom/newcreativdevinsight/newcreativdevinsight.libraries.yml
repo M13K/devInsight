@@ -1,0 +1,8 @@
+newcreativdevinsight:
+  version: VERSION
+  dependencies: 
+    - core/drupal
+    - core/drupalSettings
+  css:
+    theme:
+      css/style.css: {}

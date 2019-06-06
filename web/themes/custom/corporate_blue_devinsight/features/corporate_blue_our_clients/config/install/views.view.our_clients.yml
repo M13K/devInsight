@@ -1,20 +1,16 @@
-uuid: 5476d8d4-3017-4709-8717-7c2f10ed195f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_front_slider_image
-    - field.storage.node.field_slider_short_description
-    - image.style.home_page_image_slider
-    - node.type.front_page_slider
+    - field.storage.node.field_logo
+    - image.style.our_team_icon
+    - node.type.our_clients
   module:
     - image
     - node
     - user
-_core:
-  default_config_hash: ibkT92TTH3Qk-56W0F4aMvMJVsZED-SBKDAmDGXjaQs
-id: front_page_slider_block
-label: 'Front Page Slider Block'
+id: our_clients
+label: 'Our Clients'
 module: views
 description: ''
 tag: ''
@@ -54,19 +50,42 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: mini
         options:
-          items_per_page: 5
+          items_per_page: 10
           offset: 0
+          id: 0
+          total_pages: null
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       style:
-        type: html_list
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          uses_fields: false
       row:
         type: fields
+        options:
+          inline: {  }
+          separator: ''
+          hide_empty: false
+          default_field_elements: true
       fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        field_logo_1:
+          id: field_logo_1
+          table: node__field_logo
+          field: field_logo
           relationship: none
           group_type: group
           admin_label: ''
@@ -100,147 +119,22 @@ display:
             preserve_tags: ''
             html: false
           element_type: ''
-          element_class: ''
+          element_class: img-responsive
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: false
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_slider_short_description:
-          id: field_slider_short_description
-          table: node__field_slider_short_description
-          field: field_slider_short_description
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: basic_string
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_front_slider_image:
-          id: field_front_slider_image
-          table: node__field_front_slider_image
-          field: field_front_slider_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
           type: image
           settings:
-            image_style: home_page_image_slider
-            image_link: ''
+            image_style: our_team_icon
+            image_link: content
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -263,7 +157,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "{{ field_front_slider_image }}\n<div class=\"caption-holder\">\n  <h2>{{ title }}</h2>\n  <p>{{ field_slider_short_description }}</p>\n</div>"
+            text: '{{ field_logo_1 }}'
             make_link: false
             path: ''
             absolute: false
@@ -303,7 +197,6 @@ display:
           plugin_id: custom
       filters:
         status:
-          value: '1'
           value: true
           table: node_field_data
           field: status
@@ -318,8 +211,39 @@ display:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
-            front_page_slider: front_page_slider
+            our_clients: our_clients
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -339,7 +263,6 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Front Page Slider Block'
       header: {  }
       footer: {  }
       empty:
@@ -352,35 +275,38 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: "  <div class=\"item-list\">\n  <ul>\n    <li>\n     <img class=\"img-responsive\" src=\"http://placehold.it/1905x788\" />\n       <div class=\"caption-holder\">\n         <h2>Commitments are always Attainable !!</h2>\n         <p>Commitments are always Attainable !!Commitments are always Attainable !!</p>\n       </div>\n    </li>\n    <li>\n     <img class=\"img-responsive\" src=\"http://placehold.it/1905x788\" />\n       <div class=\"caption-holder\">\n         <h2>GROWING COMPANY FOR YOUR GROWING NEEDS</h2>\n         <p>GROWING COMPANY FOR YOUR GROWING NEEDS</p>\n       </div>\n    </li>\n  </ul>\n  </div>"
+          content: "<div class=\"our-clients\">\n<div><a><img src=\"https://placehold.it/250x250\" class=\"img-responsive\"></a></div>\n<div><a><img src=\"https://placehold.it/250x250\" class=\"img-responsive\"></a></div>\n<div><a><img src=\"https://placehold.it/250x250\" class=\"img-responsive\"></a></div>\n<div><a><img src=\"https://placehold.it/250x250\" class=\"img-responsive\"></a></div>\n<div><a><img src=\"https://placehold.it/250x250\" class=\"img-responsive\"></a></div>\n<div><a><img src=\"https://placehold.it/250x250\" class=\"img-responsive\"></a></div>\n</div>"
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      title: ''
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_front_slider_image'
-        - 'config:field.storage.node.field_slider_short_description'
+        - 'config:field.storage.node.field_logo'
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Block
+    display_title: 'Our Clients Home Page'
     position: 1
     display_options:
       display_extenders: {  }
+      display_description: ''
+      block_description: 'Our Clients Home Page'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_front_slider_image'
-        - 'config:field.storage.node.field_slider_short_description'
+        - 'config:field.storage.node.field_logo'

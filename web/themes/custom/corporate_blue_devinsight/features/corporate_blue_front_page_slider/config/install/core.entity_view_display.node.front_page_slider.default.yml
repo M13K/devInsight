@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front_page_slider.body
+    - field.field.node.front_page_slider.field_front_slider_image
+    - field.field.node.front_page_slider.field_slider_short_description
+    - node.type.front_page_slider
+  module:
+    - image
+    - text
+    - user
+id: node.front_page_slider.default
+targetEntityType: node
+bundle: front_page_slider
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_front_slider_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_slider_short_description:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  links:
+    weight: 100
+hidden:
+  langcode: true

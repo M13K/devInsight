@@ -1,4 +1,3 @@
-uuid: 5476d8d4-3017-4709-8717-7c2f10ed195f
 langcode: en
 status: true
 dependencies:
@@ -11,8 +10,6 @@ dependencies:
     - image
     - node
     - user
-_core:
-  default_config_hash: ibkT92TTH3Qk-56W0F4aMvMJVsZED-SBKDAmDGXjaQs
 id: front_page_slider_block
 label: 'Front Page Slider Block'
 module: views
@@ -303,7 +300,6 @@ display:
           plugin_id: custom
       filters:
         status:
-          value: '1'
           value: true
           table: node_field_data
           field: status

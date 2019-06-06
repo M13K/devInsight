@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.front_page_slider.body
+    - field.field.node.front_page_slider.field_front_slider_image
+    - field.field.node.front_page_slider.field_slider_short_description
+    - node.type.front_page_slider
+  module:
+    - text
+    - user
+id: node.front_page_slider.teaser
+targetEntityType: node
+bundle: front_page_slider
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_front_slider_image: true
+  field_slider_short_description: true
+  langcode: true

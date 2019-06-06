@@ -1,0 +1,25 @@
+name: 'Corporate Blue Team Members'
+description: 'Team members content type, image style, blocks and views.'
+type: module
+# core: 8.x
+dependencies:
+  - block
+  - content_translation
+  - field
+  - file
+  - image
+  - language
+  - menu_ui
+  - node
+  - path
+  - system
+  - text
+  - user
+  - views
+# version: 8.x-1.0
+
+# Information added by Drupal.org packaging script on 2018-04-19
+version: '8.x-1.1'
+core: '8.x'
+project: 'corporate_blue'
+datestamp: 1524117187

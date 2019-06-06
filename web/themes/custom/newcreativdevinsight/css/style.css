@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,300,400,900);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+/* line 1, ../sass/components/_base.scss */
+body {
+  margin-top: 0;
+}
+.fc-title {
+    font-size:3em;
+}
+.fc-event {
+  border: 0px solid #3a87ad !important;
+  padding: 0 10px;
+}
+.fc-event a:hover {
+  text-decoration: none;
+}
+
+.fc-row {
+  height: 70px !important;
+}
+h1 {
+    font-size: 30px;
+}
+.boutonConf {
+
+}
+.boutonConf a {
+  background: #21759b;
+  color: #fff !important;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  width: 150px; 
+  }
+.boutonConf a:hover {
+  color: #fff !important;
+  background: #000;
+  text-decoration: none;
+}

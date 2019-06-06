@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override for the block follow us on footer.
+ *
+ * Available variables:
+ * - block - The full block entity.
+ *   - label_hidden: The hidden block title value if the block was
+ *     configured to hide the title ('label' is empty in this case).
+ *   - module: The module that generated the block.
+ *   - delta: An ID for the block, unique within each module.
+ *   - region: The block region embedding the current block.
+ * - content: The content of this block.
+ *
+ * @ingroup templates
+ */
+#}
+
+{%
+set classes = [
+'block',
+'block-' ~ configuration.provider|clean_class,
+]
+%}
+
+{% block content %}
+  {% if theme.settings.show_social_icon %}
+    <div class="social-sharing-footer">
+      <h2 class="block-title">Follow us on </h2>
+      <ul>
+      {% if theme.settings.facebook_url %}
+      <li><a href="{{ theme.settings.facebook_url }}"  class="facebook" target="_blank" ><i class="fa fa-lg fa-facebook-square"></i></a></li>
+      {% endif %}
+      {% if theme.settings.google_plus_url %}
+      <li><a href="{{ theme.settings.google_plus_url }}"  class="google-plus" target="_blank" ><i class="fa fa-lg fa-google-plus-square"></i></a></li>
+      {% endif %}
+      {% if theme.settings.twitter_url %}
+        <li><a href="{{ theme.settings.twitter_url }}" class="twitter" target="_blank" ><i class="fa  fa-lg fa-twitter-square"></i></a></li>
+      {% endif %}
+      {% if theme.settings.linkedin_url %}
+        <li><a href="{{ theme.settings.linkedin_url }}" class="linkedin" target="_blank"><i class="fa fa-lg fa-linkedin-square"></i></a></li>
+      {% endif %}
+      {% if theme.settings.pinterest_url %}
+        <li><a href="{{ theme.settings.pinterest_url }}" class="pinterest" target="_blank" ><i class="fa fa-lg fa-pinterest-square"></i></a></li>
+      {% endif %}
+      {% if theme.settings.rss_url %}
+        <li><a href="{{ theme.settings.rss_url }}" class="rss" target="_blank" ><i class="fa fa-rss"></i></a></li>
+      {% endif %}
+      </ul>
+    </div>
+  {% endif %}
+{% endblock %}
